@@ -1,0 +1,354 @@
+@base <http://example2.com/LL/scéla_chonchobuir.trig>
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix rel: <http://purl.org/vocab/relationship/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix irishRel: <http://example.com/earlyIrishRelationship.ttl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix irishTitles: <http://example.com/earlyIrishTitles.ttl#> .
+@prefix LU: <http://example.com/LU/de_genelogia_con_culaind.trig#> .
+@prefix LaudMisc610CMN: <http://example.com/Laud_Misc_610/CGH/clanna_conchubair_maic_nessa.trig#> .
+
+
+<http://example2.com/LL> {
+  <> a dctype:Dataset ;
+     dcterms:title "Scéla Chonchobuir"@sga ;
+     dcterms:isFormatOf <http://celt.ucc.ie//published/G800011B/text001.html> ;
+     dcterms:format "application/trig" ;
+     prov:asDerivedFrom <http://celt.ucc.ie//published/G800011B/text001.html> .
+
+  <#Conchobor>
+    a foaf:Person ;
+    irishRel:nomName "Conchobor" ;
+        rel:childOf <#Nessa>;
+        owl:sameAs LaudMisc610CMN:Conchobuir .
+
+  <#Nessa>
+    a foaf:Person ;
+        irishRel:genName "Nessa" ;
+        owl:sameAs LaudMisc610CMN:Nessa .
+
+  <#Ness>
+    a foaf:Person ;
+    irishRel:nomName "Ness";
+    irishRel:nomName "Assa";
+    irishRel:nomName "Ní-hassa";
+    foaf:gender "female" ;
+    owl:sameAs <#Nessa>;
+    rel:childOf <#EchachSalbudi>;
+    rel:parentOf <#Conchobor>.
+
+  <#EchachSalbudi>
+    a irishTitle:Rí ;
+    irishRel:genName "Echach Salbudi";
+    owl:sameAs <http://example.com/Laud_Misc_610/CGH/senchus_síl_hír.trig#EochuSálbuide>.
+
+  <#Cathbad>
+    a foaf:Person ;
+    irishRel:nomName "Cathbad" ;
+        rel:childOf <#Rossa>;
+        owl:sameAs LaudMisc610CMN:Cathbad ;
+        rel:spouseOf <#Nessa>.
+
+  <#Rossa>
+    a foaf:Person .
+
+  <#Conchobor-76ec6f22>
+    a foaf:Person ;
+    irishRel:nomName "Conchobor" ;
+    owl:sameAs <#Conchobor>;
+    rel:childOf <#Cathbad-c84d56e8>.
+
+  <#Cathbad-c84d56e8>
+    a foaf:Person ;
+    owl:sameAs <#Cathbad>.
+
+  <#Chonchobur>
+    a foaf:Person;
+    irishRel:nomName "Conchobar";
+    rel:childOf <#Ness-736255f0>;
+    owl:sameAs <#Conchobor>.
+
+  <#Ness-736255f0>
+    a foaf:Person;
+    irishRel:nomName "Ness";
+    rel:childOf <#Echach>;
+    rel:spouseOf <#Fergus>;
+    owl:sameAs <#Ness>.
+
+  <#Echach>
+    a foaf:Person;
+    irishRel:genName "Echach";
+    irishRel:nomName "Eochu";
+    owl:sameAs <#EchachSalbudi>.
+
+  <#Fergus>
+        a irishTitle:Rí ;
+        irishRel:nomName "Fergus" ;
+        rel:childOf <#Rossa-65ba7833>;
+        owl:sameAs LaudMisc610CMN:Fergusa .
+
+  <#Rossa-65ba7833>
+        a foaf:Person ;
+        irishRel:genName "Rossa" ;
+        owl:sameAs <http://example.com/Laud_Misc_610/CGH/senchus_síl_hír.trig#Rossa>.
+
+<#Fergus-b94072b1>
+        a foaf:Person ;
+        irishRel:nomName "Fergus" ;
+        rel:childOf <#Roig>;
+        owl:sameAs <http://example.com/LL/ciarraige_luachra.trig#Fhergusa>.
+
+
+  <#Roig>
+        a foaf:Person ;
+        irishRel:genName "Roig";
+        owl:sameAs <http://example.com/LL/ciarraige_luachra.trig#Roig>.
+
+<#Flidais>
+        a foaf:Person ;
+        irishRel:nomName "Flidais" .
+
+<#Chonchobuir>
+  a foaf:Person;
+  irishRel:genName "Chonchobuir";
+  owl:sameAs <#Conchobor>.
+
+<#ConCulaind>
+  a foaf:Person;
+  irishRel:genName "Con Culaind";
+  irishRel:nomName "Cú Chulaind";
+  owl:same <http://example.com/LL/comuammand_na_n-genelach.trig#ChoinChulainn>.
+
+<#ConaillChernaig>
+  a foaf:Person;
+  irishRel:genName "Conaill Chernaig";
+  irishRel:nomName "Conall Cernach";
+  owl:sameAs LaudMisc610CMN:ChonaillChernaig .
+
+<#Flidais-d6d9fe20>
+  a foaf:Person;
+  irishRel:genName "Flidais";
+  owl:sameAs <#Flidais>.
+
+<#Furbaide>
+ a foaf:Person;
+  irishRel:genName "Furbaide";
+  owl:sameAs <http://example.com/LL/dimittamus_in_terim.trig#Furbaide>.
+
+<#Causcraid>
+  a foaf:Person;
+  irishRel:genName "Causcraid";
+  owl:sameAs <http://example.com/LL/aisneidem_di_araill.trig#CauscraidMendMacha>.
+
+<#Amairgin>
+  a foaf:Person;
+  irishRel:genName "Amairgin";
+  irishRel:nomName "Amairgen";
+  owl:sameAs <http://example.com/LL/comuammand_na_n-genelach.trig#Amargin>.
+
+<#Chondere>
+  a foaf:Person;
+  irishRel:genName "Chondere".
+
+<#Nuadat>
+  a foaf:Person;
+  irishRel:genName "Nuadat";
+  irishRel:nomName "Nuadu".
+
+<#Fergusa-7bb2f630>
+  a foaf:Person;
+  irishRel:genName "Fergusa";
+  irishRel:nomName "Fergus";
+  owl:sameAs <#Fergus-b94072b1>.
+
+<#Dubthaig>
+  a foaf:Person;
+  irishRel:genName "Dubthaig";
+  irishRel:nomName "Dubthach".
+
+<#Errgi>
+  a foaf:Person;
+  irishRel:genName "Errgi".
+
+<#Mind>
+  a foaf:Person;
+  irishRel:genName "Mind".
+
+<#Noisen>
+  a foaf:Person;
+  irishRel:genName "Noisen";
+  owl:sameAs <http://example.com/Laud_Misc_610/CGH/cland_conchuboir_iterum.trig#Nóissi>.
+
+<#Loegaire>
+  a foaf:Person;
+  irishRel:genName "Loegaire";
+  irishRel:nomName "Loegaire";
+  owl:sameAs <http://example.com/Laud_Misc_610/CGH/cland_conchuboir_iterum.trig#Loegairi>.
+
+<#Chormaic>
+  a foaf:Person;
+  irishRel:genName "Chormaic";
+  irishRel:nomName "Cormac";
+  owl:sameAs <http://example.com/Laud_Misc_610/CGH/cland_conchuboir_iterum.trig#Cormac>.
+
+<#Senchada>
+  a foaf:Person;
+  irishRel:genName "Senchada";
+  irishRel:nomName "Sencha".
+
+<#Cheltchair>
+  a foaf:Person;
+  irishRel:genName "Cheltchair";
+  irishRel:nomName "Celtchar";
+  owl:sameAs <http://example.com/Laud_Misc_610/CGH/cland_conchuboir_iterum.trig#Celtchair>.
+
+
+<#ConallCernach>
+        a foaf:Person ;
+        irishRel:nomName "Conall Cernach" ;
+        rel:childOf <#Amargin>;
+        owl:sameAs <#ConaillChernaig>.
+
+<#Amargin>
+        a foaf:Person ;
+        irishRel:genName "Amargin" ;
+        owl:sameAs <http://example.com/LL/comuammand_na_n-genelach.trig#Amargin>.
+
+<#MeicDaThó>
+        a foaf:Person ;
+        irishRel:genName "Meic Da Thó" .
+
+<#CuChulaind>
+        a foaf:Person;
+        irishRel:nomName "Cu Chulaind";
+        rel:childOf <#Sualtaim>;
+        owl:sameAs LU:CúCulaind .
+
+        <#Sualtaim>
+        a foaf:Person;
+        irishRel:genName "Sualtaim";
+        rel:childOf <#Becaltaig>;
+        owl:sameas LU:Soaldaim .
+
+        <#Becaltaig>
+        a foaf:Person;
+        irishRel:genName "Becaltaig";
+        rel:childOf <#Moraltaig>.
+
+        <#Moraltaig>
+        a foaf:Person;
+        irishRel:genName "Moraltaig";
+        rel:childOf <#Umendrúaid>.
+
+        <#Umendrúaid>
+        a foaf:Person;
+        irishRel:genName "Umendrúaid"
+        rdfs:comment "a sídib"@sga.
+
+<#Dolb>
+        a foaf:Person ;
+        irishRel:nomName "Dolb" ;
+        rel:childOf <#Becaltaig>;
+        rel:siblingOf <#CuChulaind>.
+
+        <#Becaltaig-c98f922e>
+        a foaf:Person ;
+        irishRel:genName "Becaltaig" ;
+        owl:sameAs <#Becaltaig>.
+
+        <#EthneIngubai>
+        a foaf:Person ;
+        irishRel:nomName "Ethne Ingubai" ;
+        rel:spouseOf <#Elcmaire>;
+        foaf:gender "female" ;
+        rel:siblingOf <#CuChulaind>.
+
+        <#Elcmaire>
+        a foaf:Person ;
+        irishRel:genName "Elcmaire" ;
+        rdfs:comment "a sídib" ;
+        owl:sameAs <http://example.com/Duanaire_Finn/PoemXLIII.trig#Ealcmhair>.
+
+<#Dechter>
+        a foaf:Person
+        foaf:gender "female" ;
+        rel:childOf <#Chathbad-52b2d5e9>
+        rel:parentOf <#ChonCulaind>.
+
+        <#Chathbad-52b2d5e9>
+        a foaf:Person ;
+        irishRel:genName "Chathbad" ;
+        owl:sameAs <#Cathbad>.
+
+        <#ChonCulaind>
+        a foaf:Person ;
+        irishRel:genName "Chon Culaind" ;
+        owl:sameAs <#CuChulaind>.
+
+        <#ScáthaigBuanand>
+        a foaf:Person ;
+        irishRel:datName "Scáthaig Buanand" ;
+        foaf:gender "female" ;
+        foaf:knows <#ChonCulaind>;
+        rel:childOf <#Ardgeimme>.
+
+        <#Ardgeimme>
+        a foaf:Person ;
+        irishRel:genName "Ardgeimme" .
+
+        <#Gerg>
+          a foaf:Person;
+          irishRel:nomName "Gerg";
+          rel:antagonistOf <#Conchobor>.
+
+<#Bricriu>
+        a foaf:Person ;
+        irishGen:nomName "Bricriu"
+        rel:childOf <#Carbada>;
+        owl:sameAs <http://example.com/Laud_Misc_610/CGH/senchus_síl_hír.trig#Bricre>.
+
+        <#Carbada>
+        a foaf:Person ;
+        irishRel:genName "Carbada" ;
+        irishRel:numChild 9 ;
+        owl:sameAs <http://example.com/Rawl_B502/senchas_síl_h_ir_fo_h_érind.trig#Carbad>.
+
+<#Glaine>
+        a foaf:Person ;
+        irishrel:nomName "Glaine" ;
+        rel:childOf <#Carbada>.
+
+        <#Gormainech>
+        a foaf:Person ;
+        irishRel:nomName "Gormainech" ;
+        rel:childOf <#Carbada>;
+        owl:sameAs <http://example.com/Rawl_B502/senchas_síl_h_ir_fo_h_érind.trig#Gormainech>.
+
+        <#ManeMinscoth>
+        a foaf:Person ;
+        irishRel:nomName "Mane Minscoth" ;
+        rel:childOf <#Carbada>;
+        owl:sameAs <http://example.com/Rawl_B502/senchas_síl_h_ir_fo_h_érind.trig#MaineMinscothach>.
+
+        <#AilillDuress>
+        a foaf:Person ;
+        irishGen:nomName "Ailill Duress" ;
+        rel:childOf <#Carbada>;
+        owl:sameAs <http://example.com/Rawl_B502/senchas_síl_h_ir_fo_h_érind.trig#Dures>.
+
+        <#Ret>
+        a foaf:Person ;
+        irishGen:nomName "Ret" ;
+        rel:childOf <#Carbada>;
+        owl:sameAs <http://example.com/Rawl_B502/senchas_síl_h_ir_fo_h_érind.trig#Redgc>.
+
+        <#Bricriu-f187faf7>
+        a foaf:Person ;
+        irishRel:nomName "Bricriu" ;
+        owl:sameAs <#Bricriu>;
+        owl:sameas <http://example.com/Rawl_B502/senchas_síl_h_ir_fo_h_érind.trig#BricneBeltenga>.
+}
