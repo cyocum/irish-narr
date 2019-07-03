@@ -1,4 +1,4 @@
-@base <http://example.com/LL/scéla_chonchobuir.trig>
+@base <http://example.com/LL/scéla_chonchobuir.trig> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
@@ -6,7 +6,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dctype: <http://purl.org/dc/dcmitype/> .
-@prefix irishRel: <http://example.com/earlyIrishRelationship.ttl#> .
+@prefix irishRel: <http://example.com/earlyirishRelationship.ttl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix irishTitles: <http://example.com/earlyIrishTitles.ttl#> .
 @prefix LU: <http://example.com/LU/de_genelogia_con_culaind.trig#> .
@@ -43,7 +43,7 @@
     rel:parentOf <#Conchobor>.
 
   <#EchachSalbudi>
-    a irishTitle:Rí ;
+    a irishTitles:Rí ;
     irishRel:genName "Echach Salbudi";
     owl:sameAs <http://example.com/Laud_Misc_610/CGH/senchus_síl_hír.trig#EochuSálbuide>.
 
@@ -87,7 +87,7 @@
     owl:sameAs <#EchachSalbudi>.
 
   <#Fergus>
-        a irishTitle:Rí ;
+        a irishTitles:Rí ;
         irishRel:nomName "Fergus" ;
         rel:childOf <#Rossa-65ba7833>;
         owl:sameAs LaudMisc610CMN:Fergusa .
@@ -247,7 +247,7 @@
 
         <#Umendrúaid>
         a foaf:Person;
-        irishRel:genName "Umendrúaid"
+        irishRel:genName "Umendrúaid";
         rdfs:comment "a sídib"@sga.
 
 <#Dolb>
@@ -272,12 +272,12 @@
         a foaf:Person ;
         irishRel:genName "Elcmaire" ;
         rdfs:comment "a sídib" ;
-        owl:sameAs DFXLIII:Ealcmhair>.
+        owl:sameAs DFXLIII:Ealcmhair.
 
 <#Dechter>
-        a foaf:Person
+        a foaf:Person ;
         foaf:gender "female" ;
-        rel:childOf <#Chathbad-52b2d5e9>
+        rel:childOf <#Chathbad-52b2d5e9>;
         rel:parentOf <#ChonCulaind>.
 
         <#Chathbad-52b2d5e9>
@@ -308,7 +308,7 @@
 
 <#Bricriu>
         a foaf:Person ;
-        irishGen:nomName "Bricriu"
+        irishRel:nomName "Bricriu";
         rel:childOf <#Carbada>;
         owl:sameAs <http://example.com/Laud_Misc_610/CGH/senchus_síl_hír.trig#Bricre>.
 
@@ -320,7 +320,7 @@
 
 <#Glaine>
         a foaf:Person ;
-        irishrel:nomName "Glaine" ;
+        irishRel:nomName "Glaine" ;
         rel:childOf <#Carbada>.
 
         <#Gormainech>
@@ -337,13 +337,13 @@
 
         <#AilillDuress>
         a foaf:Person ;
-        irishGen:nomName "Ailill Duress" ;
+        irishRel:nomName "Ailill Duress" ;
         rel:childOf <#Carbada>;
         owl:sameAs <http://example.com/Rawl_B502/senchas_síl_h_ir_fo_h_érind.trig#Dures>.
 
         <#Ret>
         a foaf:Person ;
-        irishGen:nomName "Ret" ;
+        irishRel:nomName "Ret" ;
         rel:childOf <#Carbada>;
         owl:sameAs <http://example.com/Rawl_B502/senchas_síl_h_ir_fo_h_érind.trig#Redgc>.
 
