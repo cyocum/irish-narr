@@ -21,57 +21,68 @@
 <#Goll>
         a foaf:Person;
         irishRel:nomName " Goll";
-        rel:childOf <#Cormaic>.
+        rel:childOf <#Cormaic>;
+        owl:sameAs <http://example.com/Duanaire_Finn/PoemXLIII.trig#Goll>, <http://example.com/NLS.Adv.72.1.1/14vb1.trig#Goll>.
 
 <#Cormaic>
         a foaf:Person;
         irishRel:genName "Cormaic";
-        rel:childOf <#Nemaind>.
+        rel:childOf <#Nemaind>;
+        owl:sameAs <http://example.com/NLS.Adv.72.1.1/14vb1.trig#Cormaic>.
 
 <#Nemaind>
         a foaf:Person;
         irishRel:genName "Nemaind";
-        rel:childOf <#MornaMoir>.
+        rel:childOf <#MornaMoir>;
+        owl:sameAs <http://example.com/NLS.Adv.72.1.1/14vb1.trig#Nemaind>.
 
 <#MornaMoir> 
         a foaf:Person;
         irishRel:genName "Mrna Moir";
-        rel:childOf <#GaraidGlunduib>.
+        rel:childOf <#GaraidGlunduib>;
+        owl:sameAs <http://example.com/NLS.Adv.72.1.1/14vb1.trig#MornaMoir>.
 
 <#GaraidGlunduib>
         a foaf:Person;
         irishRel:genName "Garaid Glunduib";
-        rel:childOf <#AedaDuanaich>.
+        rel:childOf <#AedaDuanaich>;
+        owl:sameAs <http://example.com/NLS.Adv.72.1.1/14vb1.trig#GaraigGluinfind>.
 
 <#AedaDuanaich>
         a foaf:Person;
         irishRel:genName "Aeda Duanaich";
-        rel:childOf <#AedaChindclairi>.
+        rel:childOf <#AedaChindclairi>;
+        owl:sameAs <http://example.com/NLS.Adv.72.1.1/14vb1.trig#AedaDuanaig>.
 
 <#AedaChindclairi>
         a foaf:Person;
         irishRel:genName "Aeda Chindclairi";
-        rel:childOf <#Conaill>.
+        rel:childOf <#Conaill>;
+        owl:sameAs <http://example.com/NLS.Adv.72.1.1/14vb1.trig#AedaChindclairi>.
 
 <#Conaill>
         a foaf:Person;
         irishRel:genName "Conaill";
-        rel:childOf <#Sainb>.
+        rel:childOf <#Sainb>;
+        owl:sameAs <http://example.com/NLS.Adv.72.1.1/14vb1.trig#Conaill>.
 
 <#Sainb>
         a foaf:Person;
         irishRel:genName "Sainb";
-        rel:childOf <#Ceit>.
+        rel:childOf <#Ceit>;
+        owl:sameAs <http://example.com/NLS.Adv.72.1.1/14vb1.trig#Sthainb>.
 
 <#Ceit>
         a foaf:Person;
         irishRel:genName "Ceit";
-        rel:childOf <#MagaChmurisce>.
+        rel:childOf <#MagaChmurisce>;
+        owl:sameAs <http://example.com/NLS.Adv.72.1.1/14vb1.trig#Ceit>.
 
 <#MagachMurisce>
         a foaf:Person;
         irishRel:genName "Magach Murisce" ;
-        foaf:gender "female" .
+        foaf:gender "female" ;
+        owl:sameAs <http://example.com/NLS.Adv.72.1.1/14vb1.trig#Magach>.
 
 <#Magach>
         a foaf:Person ;
@@ -84,7 +95,8 @@
         a foaf:Person ;
         irishRel:accName "Chathbaid" ;
         irishRel:nomName "Cathbad" ;
-        rel:parentOf <#Deithtir>, <#Indlenam>, <#Findchaem>.
+        rel:parentOf <#Deithtir>, <#Indlenam>, <#Findchaem>;
+        owl:sameAs <http://example.com/Laud_Misc_610/CGH/clanna_conchubair_maic_nessa.trig#Chathbad>, <http://example.com/LL/clanna_ébir_i_l-leith_chuind.trig#Cathbath>.
 
 <#Deithtir>
         a foaf:Person ;
@@ -94,7 +106,8 @@
         
 <#CúChulainn>
         a foaf:Person ;
-        irishRel:nomName "Cú Chulainn" .
+        irishRel:nomName "Cú Chulainn" ;
+        owl:sameAs <http://example.com/LL/dimittamus_in_terim.trig#ConChulaind>.
 
 <#Indlenam>
         a foaf:Person ;
@@ -104,15 +117,18 @@
 
 <#Naisi>
         a foaf:Person ;
-        irishRel:nomName "Naisi" .
+        irishRel:nomName "Naisi" ;
+        owl:sameAs <http://example.com/LL/clanna_ébir_i_l-leith_chuind.trig#Noesen>.
 
 <#Andli>
         a foaf:Person ;
-        irishRel:nomName "Andli" .
+        irishRel:nomName "Andli" ;
+        owl:sameAs <http://example.com/LL/clanna_ébir_i_l-leith_chuind.trig#Anle>.
 
 <#Ardain>
         a foaf:Person ;
-        irishRel:nomName "Ardain" .
+        irishRel:nomName "Ardain" ;
+        owl:sameAs <http://example.com/LL/clanna_ébir_i_l-leith_chuind.trig#Ardain>.
 
 <#Findchaem>
         a foaf:Person ;
@@ -122,7 +138,8 @@
 
 <#ConaillCearnaid>
         a foaf:Person ;
-        irishRel:genName "Conaill Cearnaid" .
+        irishRel:genName "Conaill Cearnaid" ;
+        owl:sameAs <http://example.com/LL/lagin.ttl#ConaillCernaig>.
 
 
 <#Magach-647592f2>
@@ -142,6 +159,7 @@
 <#Degad>
         a foaf:Person ;
         irishRel:nomName "Degad" .
+        # same as <http://example.com/LLAdd/LLAdd.trig#Degad> ? -CGY
         
 <#Magach-5442a811>
         owl:sameAs <#Magach>;
@@ -174,7 +192,8 @@
 
 <#Cumall>
         a foaf:Person ;
-        irishRel:nomName "Cumall" .
+        irishRel:nomName "Cumall" ;
+        owl:sameAs <http://example.com/Duanaire_Finn/PoemXLIII.trig#Cumaill>.
 
 <#Findbraigdi>
         a foaf:Person ;
@@ -197,7 +216,8 @@
 
 <#Find>
         a foaf:Person ;
-        irishRel:genName "Find" .
+        irishRel:genName "Find" ;
+        owl:sameAs <http://example.com/Duanaire_Finn/PoemXLIII.trig#Fionn>.
 
 <#Goll-827f9f1c>
         a foaf:Person ;
@@ -226,11 +246,12 @@
 <#GaraidGlunduib-e7a8b1e4>
         a foaf:Person;
         irishRel:genName "Garaid Glunduib";
-        rel:childOf <#Nemaind>.
+        rel:childOf <#Nemaind-f660de65>.
 
-<#Nemaind>
+<#Nemaind-f660de65>
         a foaf:Person;
-        irishRel:genName "Nemaind".
+        irishRel:genName "Nemaind" ;
+        owl:sameAs <#Nemaind>.
 
 <#AedCaem-5e9cf6d0>
         owl:sameAs <#AedCaem>;
@@ -240,6 +261,7 @@
         a irishTitles:Rí ;
         irishRel:nomName "Fear Corp" ;
         rdf:comment "ri muman"@sga .
+        # same as <http://example.com/Laud_Misc_610/CGH/clanna_conchubair_maic_nessa.trig#FerCorp>
 
 <#MornaMoir-5a6814f7> 
         owl:sameAs <#MornaMoir> ;
@@ -368,11 +390,13 @@ _:missing-d23e02b6
 <#CormaicChais>
         a foaf:Person ;
         irishRel:genName "Cormaic Chais" ;
-        rel:childOf <#AillellaUloim>.
+        rel:childOf <#AillellaUloim>;
+        owl:sameAs <http://example.com/LL/rig_tuadmuman.trig#CormaicCais>.
 
 <#AillellaUloim>
         a foaf:Person ;
-        irishRel:genName "Aillella Uloim" .        
+        irishRel:genName "Aillella Uloim" ;
+        owl:sameAs <http://example.com/LL/rig_tuadmuman.trig#AilellaUluimm>.
 
 <#Fhind>
         a foaf:Person ;
@@ -394,8 +418,8 @@ _:missing-d23e02b6
 
 <#MogCorp>
         a foaf:Person ;
-        irishRel:nomName "Mog Corp" .
-
+        irishRel:nomName "Mog Corp" ;
+        owl:sameAs <http://example.com/LL/rig_tuadmuman.trig#MogaCoirp>.
 
 <#NiodhCorp>
         a foaf:Person ;
@@ -409,7 +433,8 @@ _:missing-d23e02b6
 <#Oisin>
         a foaf:Person ;
         irishRel:nomName "Oisin" ;
-        rel:childOf <#Find-87294072>.
+        rel:childOf <#Find-87294072>;
+        owl:sameAs <http://example.com/Duanaire_Finn/PoemXLIII.trig#Oisin>.
 
 <#Find-87294072>
         owl:sameAs <#Fhind>;
@@ -422,7 +447,8 @@ _:missing-d23e02b6
 
 <#ChairpriLifechair>
         a irishTitles:Rí ;
-        irishRel:nomName "Chairpri Lifechair" .
+        irishRel:nomName "Chairpri Lifechair" ;
+        owl:sameAs <http://example.com/Laud_Misc_610/CGH/clanna_conchubair_maic_nessa.trig#ChoirpriLiefchair>.
 
 <#AedaCaeim>
         a irishTitles:Rí ;
@@ -467,13 +493,13 @@ _:missing-d23e02b6
 <#Lugaid>
         a foaf:Person;
         irishRel:nomName "lugaid";
-        rel:childOf <#laigdeach>.
+        rel:childOf <#Laigdeach>.
 
 <#Laigdeach>
         a foaf:Person;
-        irishRel:genName "laigdeach".
+        irishRel:genName "Laigdeach".
 
-<Aaengus>
+<#Aaengus>
         a foaf:Person;
         irishRel:nomName "Aengus";
         rel:childOf <#Luigdech>.
@@ -505,14 +531,16 @@ _:missing-d23e02b6
 <#NiaMor-a5bcb98a>
         owl:sameAs <#NiaMor>.
 
-<#Aedalaind>
+<#AedAlaind-aa96b0d1>
         a foaf:Person;
-        irishRel:nomName "Aed alaind";
-        rel:childOf <#EchachBaiceda>.
+        irishRel:nomName "Aed Alaind";
+        owl:sameAs <#AedAlaind>;
+        rel:childOf <#EchachBaiceda-94802ab5>.
 
-<#EchachBaiceda>
+<#EchachBaiceda-94802ab5>
         a foaf:Person;
         irishRel:genName "Echach Baiceda";
+        owl:sameAs <#EchachBaiceda>;
         rel:childOf <#ConaillCruachna>.
 
 <#ConaillCruachna>
@@ -633,12 +661,13 @@ _:missing-d23e02b6
 <#Delbraid>
         a foaf:Person;
         irishRel:genName "Delbraid";
-        rel:childOf <#DairiDomnandaich>.
+        rel:childOf <#DairiDomnandaich-bffabe63>.
 
-<#DairiDomnandaich>
+<#DairiDomnandaich-bffabe63>
         a foaf:Person;
         irishRel:genName "Dairi Domnandaich";
         rel:childOf <#Ilair>.
+        #same as <#DairiDomnandaich> above ? - CGY
 
 <#Ilair>
         a foaf:Person;
@@ -666,7 +695,7 @@ _:missing-d23e02b6
 
 <#ConRachCais>
         a foaf:Person;
-        irishRel:genName "conrach cais";
+        irishRel:genName "Con Rach Cais";
         rel:childOf <#Dairi>;
         irishRel:numChild 2 .
 
@@ -687,7 +716,7 @@ _:missing-d23e02b6
 
 <#TuamaTened>
         a foaf:Person;
-        irishRel:genName "tuama tened";
+        irishRel:genName "Tuama Tened";
         rel:childOf <#FirDaBeand>.
 
 <#FirDaBeand>
