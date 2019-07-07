@@ -36,9 +36,9 @@
         rel:childOf <#MornaMoir>;
         owl:sameAs <http://example.com/NLS.Adv.72.1.1/14vb1.trig#Nemaind>.
 
-<#MornaMoir> 
+<#MornaMoir>
         a foaf:Person;
-        irishRel:genName "Mrna Moir";
+        irishRel:genName "Morna Moir";
         rel:childOf <#GaraidGlunduib>;
         owl:sameAs <http://example.com/NLS.Adv.72.1.1/14vb1.trig#MornaMoir>.
 
@@ -103,7 +103,7 @@
         irishRel:nomName "Deithtir" ;
         foaf:gender "female" ;
         rel:parentOf <#CúChulainn>.
-        
+
 <#CúChulainn>
         a foaf:Person ;
         irishRel:nomName "Cú Chulainn" ;
@@ -134,13 +134,13 @@
         a foaf:Person ;
         irishRel:nomName "Findchaem" ;
         foaf:gender "female" ;
-        rel:parentOf <#ConaillCearaid>.
+        rel:parentOf <#ConaillCearaid>;
+        owl:sameAs <http://example.com/Laud_Misc_610/CGH/clanna_conchubair_maic_nessa.trig#Findchóem>.
 
 <#ConaillCearnaid>
         a foaf:Person ;
         irishRel:genName "Conaill Cearnaid" ;
         owl:sameAs <http://example.com/LL/lagin.ttl#ConaillCernaig>.
-
 
 <#Magach-647592f2>
         a foaf:Person ;
@@ -151,16 +151,18 @@
             a foaf:Person ;
             rel:parentOf <#Curai>
             ] .
-            
+
 <#Curai>
         a foaf:Person ;
-        irishRel:genName "Curai" .
+        irishRel:genName "Curai" ;
+        owl:sameAs <http://example.com/LL/senchas_síl_ébir.trig#CúRúi>.
 
 <#Degad>
         a foaf:Person ;
         irishRel:nomName "Degad" .
         # same as <http://example.com/LLAdd/LLAdd.trig#Degad> ? -CGY
-        
+        # Yes, that seems to make sense, in terms of generations. -EPT
+
 <#Magach-5442a811>
         owl:sameAs <#Magach>;
         rel:parentOf <#Ceit-ac4cdcbc>.
@@ -172,7 +174,8 @@
 <#CairpriCeindderg>
         a foaf:Person ;
         irishRel:genName "Cairpri Ceindderg" ;
-        rel:childOf <#FhirDaLoch>.
+        rel:childOf <#FhirDaLoch>;
+        owl:sameAs <http://example.com/LLAdd/LLAdd.trig#CoirpreCeinnderg>.
 
 <#FhirDaLoch>
         a foaf:Person ;
@@ -185,6 +188,9 @@
 <#Conall>
         a foaf:Person ;
         irishRel:nomName "Conall" .
+# I looked up Conall Cernach's biography to find out if this was he. Howwever, it
+# turns out that he killed Cet, not the other way around. I wonder if this is a mistake
+# in the text. Anyway, we are right to not identify this with Conall Cernach for now. EPT
 
 <#Goll-70ff6268>
         owl:sameAs <#Goll>;
@@ -263,10 +269,10 @@
         rdf:comment "ri muman"@sga .
         # same as <http://example.com/Laud_Misc_610/CGH/clanna_conchubair_maic_nessa.trig#FerCorp>
 
-<#MornaMoir-5a6814f7> 
+<#MornaMoir-5a6814f7>
         owl:sameAs <#MornaMoir> ;
         irishRel:numChild 3 .
-        
+
 <#Morna-4f25b77f>
         owl:sameAs <#MornaMoir-5a6814f7>;
         rel:childOf <#Nemaind-721da97f>.
@@ -301,7 +307,7 @@ _:missing-d23e02b6
         rel:childOf <#Nemaind-8b5262cb>.
 
 <#Nemaind-8b5262cb>
-        a foaf:Person ;        
+        a foaf:Person ;
         rel:ancestorOf <#Senaig>;
         owl:sameAs <#Nemaind>.
 
@@ -318,7 +324,7 @@ _:missing-d23e02b6
 <#Suanan>
         a foaf:Person ;
         irishRel:genName "Suanan" .
-        
+
 <#Senaich>
         a foaf:Person ;
         irishRel:genName "Senaich" ;
@@ -331,7 +337,7 @@ _:missing-d23e02b6
 
 <#Nemaind-336974b7>
         owl:sameAs <#Nemaind>.
-        
+
 <#Dond>
         a foaf:Person ;
         irishRel:nomName "Dond" ;
@@ -349,7 +355,7 @@ _:missing-d23e02b6
 <#Nemaind-895f61e9>
         a foaf:Person ;
         irishRel:genName "Nemaind" .
-        
+
 # The text in this are seems to contradict itself. Above Nemaind is
 # the decendant of Garaid Glunduib not Garaid Glunduib the son of
 # Nemaind. -CGY
@@ -374,7 +380,7 @@ _:missing-d23e02b6
 <#Feradaich>
         a foaf:Person ;
         irishRel:genName "Feradaich" .
-        
+
 <#Forco-81382fda>
         a irishTitles:Rí ;
         owl:sameAs <#Forco>.
@@ -429,7 +435,7 @@ _:missing-d23e02b6
             foaf:gender "female" ;
             rel:siblingOf <#Oisin>
             ] .
-            
+
 <#Oisin>
         a foaf:Person ;
         irishRel:nomName "Oisin" ;
@@ -439,11 +445,11 @@ _:missing-d23e02b6
 <#Find-87294072>
         owl:sameAs <#Fhind>;
         irishRel:descendantOfGroup <#ClandBaiscni>.
-        
+
 <#ClandBaiscni>
         a irishRel:PopulationGroup ;
         irishRel:populationGroupName "Cland Baiscni" .
-        
+
 
 <#ChairpriLifechair>
         a irishTitles:Rí ;
@@ -722,5 +728,5 @@ _:missing-d23e02b6
 <#FirDaBeand>
         a foaf:Person;
         irishRel:genName "Fir Da Beand".
-        
+
 }
