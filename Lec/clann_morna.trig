@@ -779,12 +779,12 @@ _:missing-d23e02b6
 <#Tindi>
         a foaf:Person ;
         irishRel:nomName "Tindi" ;
-        rel:childOf <#ConRachCais> .
+        rel:childOf <#ConrachCais> .
 
-<#ConRachCais>
+<#ConrachCais>
         a foaf:Person;
-        irishRel:genName "Con Rach Cais";
-        irishRel:nomName "Cú Roi Cas";
+        irishRel:genName "Conrach Cais";
+        irishRel:nomName "Conra Cas";
         rel:childOf <#Dairi>;
         irishRel:numChild 2 .
 
