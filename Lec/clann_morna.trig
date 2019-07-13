@@ -89,6 +89,7 @@
         owl:sameAs <#MagachMurisce>;
         irishRel:numChild 3 ;
         rel:spouseOf <#Chathbaid>;
+        foaf:gender "female" ;
         rel:parentOf <#Deithtir>, <#Indlenam>, <#Findchaem>.
 
 <#Chathbaid>
@@ -159,7 +160,8 @@
 
 <#Degad>
         a foaf:Person ;
-        irishRel:nomName "Degad" .
+        irishRel:nomName "Degad" ;
+        owl:sameAs <http://example.com/LLAdd/LLAdd.trig#Degad>.
         # same as <http://example.com/LLAdd/LLAdd.trig#Degad> ? -CGY
         # Yes, that seems to make sense, in terms of generations. -EPT
 
@@ -179,7 +181,12 @@
 
 <#FhirDaLoch>
         a foaf:Person ;
-        irishRel:genName "Fhir Da Loch" .
+        irishRel:genName "Fhir Da Loch" ;
+        irishRel:descendantOfGroup <#Domancha>.
+
+<#Domancha>
+        a irishRel:PopulationGroup;
+        irishRel:populationGroupName "Domancha".
 
 <#Ceit-faed6d60>
         owl:sameAs <#Ceit>;
@@ -218,7 +225,8 @@
 <#Morna>
         a foaf:Person ;
         irishRel:genName "Morna" ;
-        owl:sameAs <#MornaMoir> .
+        owl:sameAs <#MornaMoir> ;
+        irishRel:ancestorOfGroup <#ClainniMorna>.
 
 <#Find>
         a foaf:Person ;
@@ -241,13 +249,14 @@
 
 <#ClainniMorna>
         a irishRel:PopulationGroup ;
-        irishRel:populationGroupName "Clainni Morna" .
+        irishRel:populationGroupName "Clann Morna" .
 
 <#AedCaem>
         a irishTitles:Rí;
         irishRel:nomName "Aed Caem";
         irishRel:descendantOfGroup <#ClainniMorna>;
-        rel:childOf <#GaraidGlunduib-e7a8b1e4>.
+        rel:childOf <#GaraidGlunduib-e7a8b1e4>;
+        rdfs:comment "Rig deigenach cuicid Condacht o Cloind Morna".
 
 <#GaraidGlunduib-e7a8b1e4>
         a foaf:Person;
@@ -266,8 +275,10 @@
 <#FearCorp>
         a irishTitles:Rí ;
         irishRel:nomName "Fear Corp" ;
-        rdf:comment "ri muman"@sga .
+        rdf:comment "ri muman"@sga ;
+        owl:sameAs <http://example.com/Laud_Misc_610/CGH/clanna_conchubair_maic_nessa.trig#FerCorp>.
         # same as <http://example.com/Laud_Misc_610/CGH/clanna_conchubair_maic_nessa.trig#FerCorp>
+        # I think so. He is the only person of that name in the database and the chronology fits. EPT
 
 <#MornaMoir-5a6814f7>
         owl:sameAs <#MornaMoir> ;
@@ -304,26 +315,31 @@ _:missing-d23e02b6
 <#Doigfher>
         a foaf:Person ;
         irishRel:nomName "Doigfher" ;
+        rel:ancestorOf <#Senaig>;
         rel:childOf <#Nemaind-8b5262cb>.
 
 <#Nemaind-8b5262cb>
         a foaf:Person ;
-        rel:ancestorOf <#Senaig>;
         owl:sameAs <#Nemaind>.
 
 <#Senaig>
         a foaf:Person ;
         irishRel:genName "Senaig" ;
-        rel:childOf <#DaigriDind>, <#Suanan>.
+        rel:childOf <#Daigri>.
 
-<#DaigriBind>
+<#Daigri>
         a foaf:Person ;
-        foaf:gender "female" ;
-        irishRel:genName "Daigri Bind" .
+        irishRel:genName "Daigri" .
+
+<#Bind>
+        a foaf:Person;
+        irishRel:genName "Bind" ;
+        rel:childOf <#Senaich>.
 
 <#Suanan>
         a foaf:Person ;
-        irishRel:genName "Suanan" .
+        irishRel:genName "Suanan" ;
+        rel:childOf <#Senaich>.
 
 <#Senaich>
         a foaf:Person ;
