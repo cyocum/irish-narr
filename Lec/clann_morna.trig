@@ -344,11 +344,11 @@ _:missing-d23e02b6
 <#Senaich>
         a foaf:Person ;
         irishRel:genName "Senaich" ;
+        irishRel:numChild 2 ;
         rel:childOf <#Morna-d470f6bd>.
 
 <#Morna-d470f6bd>
         owl:sameAs <#MornaMoir>;
-        irishRel:numChild 2 ;
         irishRel:childOf <#Nemaind-336974b7>.
 
 <#Nemaind-336974b7>
@@ -357,24 +357,33 @@ _:missing-d23e02b6
 <#Dond>
         a foaf:Person ;
         irishRel:nomName "Dond" ;
-        rel:childOf <#Aeda-93b0b62f>.
+        rel:childOf <#Aeda-93b0b62f>;
+        foaf:title "rigfhendig"@sga.
 
 <#Aeda-93b0b62f>
         a foaf:Person ;
         irishRel:genName "Aeda" ;
-        rel:childOf <#GaraidGlunduib-94c1aeff>.
+        rel:childOf <#GaraidGlunduib-94c1aeff>;
+        owl:sameAs <#Aeda>.
 
 <#GaraidGlunduib-94c1aeff>
         irishRel:genName "Garaid Glunduib" ;
-        rel:childOf <#Nemaind-895f61e9>.
+        rel:childOf <#Nemaind-895f61e9>;
+        owl:sameAs <#GaradGlundub>.
 
 <#Nemaind-895f61e9>
         a foaf:Person ;
-        irishRel:genName "Nemaind" .
+        irishRel:genName "Nemaind" ;
+        owl:sameAs <#Nemaind-8b5262cb>.
 
 # The text in this are seems to contradict itself. Above Nemaind is
 # the decendant of Garaid Glunduib not Garaid Glunduib the son of
 # Nemaind. -CGY
+# I agree. And that is not the only problem with this bit anyway
+# (the same problems are present in the NLS Adv. 72.1.1 text too, btw).
+# Donn mac Aeda mheic Garaid meic Morna is a character in Acallam na Senórach who
+# ends up taking over the revived Fian. This is presumably <#Dond>. So Nemand is
+# not even universally attested! EPT
 
 <#Fial>
         a foaf:Person ;
@@ -382,20 +391,35 @@ _:missing-d23e02b6
         rel:childOf <#GaraidGlunduib-605ef4e9>;
         rel:parentOf <#Forco>.
 
-
 <#GaraidGlunduib-605ef4e9>
         owl:sameAs <#GaraidGlunduib-94c1aeff>.
 
 # Which GaraidGlunduib ? I am assuming the one textually closest. -CGY
+# I think we should make them the same (and I have done so). Even though
+# there is confusion about the pedigree, there doesn't seem to be anything
+# to be gained from trying to tease apart two characters from this. EPT
 
 <#Forco>
         a foaf:Person ;
         irishRel:genName "Forco" ;
-        rel:childOf <#Feradaich>.
+        rel:childOf <#Feradaich>;
+        foaf:title "rig con[n]acht"@sga.
 
 <#Feradaich>
         a foaf:Person ;
         irishRel:genName "Feradaich" .
+
+<#Art>
+        a foaf:Person;
+        irishRel:nomName "Art";
+        rel:childOf <#Cuind>;
+        foaf:title "rig Érenn"@sga;
+        owl:sameAs <http://example.com/LL/rig_ailig.trig#ArtOenfhir>.
+
+<#Cuind>
+        a foaf:Person;
+        irishRel:genName "Cuind";
+        owl:sameAs <http://example.com/LL/rig_ailig.trig#CuindCetchathaig>.
 
 <#Forco-81382fda>
         a irishTitles:Rí ;
@@ -424,11 +448,13 @@ _:missing-d23e02b6
         a foaf:Person ;
         irishRel:genName "Fhind" ;
         rel:childOf <#Cumaill>;
-        owl:sameAs <#Find>.
+        owl:sameAs <#Find>;
+        owl:sameAs <http://example.com/LL/lagin.trig#Find-b1db9300>.
 
 <#Cumaill>
         a foaf:Person ;
-        irishRel:genName "Cumaill" .
+        irishRel:genName "Cumaill" ;
+        owl:sameAs <http://example.com/LL/lagin.trig#Cumaill>.
 
 <#Tindi>
         a foaf:Person ;
@@ -443,14 +469,19 @@ _:missing-d23e02b6
         irishRel:nomName "Mog Corp" ;
         owl:sameAs <http://example.com/LL/rig_tuadmuman.trig#MogaCoirp>.
 
-<#NiodhCorp>
+<#ModhCorp>
         a foaf:Person ;
-        irishRel:nomName "Niodh Corp" ;
+        irishRel:nomName "Modh Corp" ;
+        owl:sameAs <#MogCorp>;
         rel:childOf [
             a foaf:Person ;
             foaf:gender "female" ;
-            rel:siblingOf <#Oisin>
+            rel:siblingOf <#Oisin>;
+            owl:sameAs <#Saimer>
             ] .
+
+# Apologies. MS misreading on my part (recte Modh Corp, not Niodh Corp, so the same as Mog Corp),
+# although the scribe did vary the spelling quite gratuitously... EPT
 
 <#Oisin>
         a foaf:Person ;
@@ -464,8 +495,8 @@ _:missing-d23e02b6
 
 <#ClandBaiscni>
         a irishRel:PopulationGroup ;
-        irishRel:populationGroupName "Cland Baiscni" .
-
+        irishRel:populationGroupName "Cland Baiscni" ;
+        owl:sameAs <http://example.com/LLAdd/LLAdd.trig#ClannBaiscne>.
 
 <#ChairpriLifechair>
         a irishTitles:Rí ;
@@ -481,15 +512,19 @@ _:missing-d23e02b6
 <#GaraidGlunduib-36c5195b>
         owl:sameAs <#GaraidGlunduib>.
 
-
 <#AedAlaind>
         a foaf:Person ;
         irishRel:nomName "Aed Alaind" ;
-        rel:childOf <#EchachBaiceda>.
+        rel:childOf <#EchachBaiceda>;
+        irishRel:descendantOfGroup <#Gamanraidi>.
 
 <#EchachBaiceda>
         a foaf:Person ;
         irishRel:genName "Echach Baiceda" .
+
+<#Gamanraidi>
+        a irishRel:PopulationGroup;
+        irishRel:populationGroupName "Gamanraidi".
 
 <#Sechra>
         a foaf:Person ;
@@ -500,17 +535,31 @@ _:missing-d23e02b6
 
 <#Chormaic>
         a foaf:Person ;
-        irishRel:genName "Chormaic" .
+        irishRel:genName "Chormaic" ;
+        owl:sameAs <http://example.com/LL/rig_ailig.trig#CormaicUlfhota>.
         # is this a Cormac that we have already seen? - CGY
+        # I was taking it as Cormac mac Airt, as he appears to be
+        # able to seize and give the kingship of Connacht without
+        # too much difficulty and he appears to have a Fír Flathemon
+        # to break. EPT
 
 <#ChlandaibUmoir>
         a irishRel:PopulationGroup ;
-        irishRel:populationGroupName "Chlandaib Umoir" .
+        irishRel:populationGroupName "Clanna Umoir" .
 
 <#NiaMor>
         a foaf:Person ;
         irishRel:accName "Nia Mor" ;
         rel:childOf <#FhirTri>.
+
+<#FhirTri>
+        a foaf:Person;
+        irishRel:genName "Fhir Tri";
+        irishRel:nomName "Fer Tri";
+        owl:sameAs <http://example.com/Laud_Misc_610/CGH/scéla_eogain_in_so_&_cormaic.trig#LuigneFerTrí>.
+
+# See Early Christian Ireland p.581: could this be Luigne Fer Tri? If so,
+# it would make sense for Cormac to be favouring the son of his fosterer. EPT
 
 <#Lugaid>
         a foaf:Person;
@@ -521,7 +570,7 @@ _:missing-d23e02b6
         a foaf:Person;
         irishRel:genName "Laigdeach".
 
-<#Aaengus>
+<#Aengus>
         a foaf:Person;
         irishRel:nomName "Aengus";
         rel:childOf <#Luigdech>.
@@ -539,12 +588,15 @@ _:missing-d23e02b6
 <#Fothaid>
         a foaf:Person;
         irishRel:genName "Fothaid";
-        rel:childOf <#Fiach>.
+        rel:childOf <#FiachachSuidi>.
 
-<#Fiach>
+<#FiachachSuidi>
         a foaf:Person;
-        irishRel:genName "Fiach".
+        irishRel:genName "Fiachach Suidi".
 
+# We have <http://example.com/Rawl_B502/item_genelach_na_n_déisse.trig#FiachachSuidgi>,
+# who has 5 sons but none of them are called Fothaid. Unfortunately, the present text
+# doesn't provide enough context for identification to be made on any other grounds.EPT
 
 <#AedAlaind-f05bdbe7>
         owl:sameAs <#AedAlaind>;
@@ -591,13 +643,20 @@ _:missing-d23e02b6
 
 <#Fidaich>
         a foaf:Person ;
-        irishRel:genName "Fidaich" .
+        irishRel:genName "Fidaich" ;
+        rdfs:comment "o fuilet rigda ratha Cruachan";
+        owl:sameAs <#Fhidaig>.
         # same as Fhidaig? Domnaill does not appear in the list that follows -CGY
+        # Good point. But Áed Alaind, on his first appearance, is said to be of the
+        # Gamanraid, as are the other characters named here, in other sources. So I think
+        # it is meant to be the same Fidach, even though the accounts of his offspring
+        # aren't very consistent. EPT
 
 <#Fraech>
         a foaf:Person;
         irishRel:nomName "Fraech";
-        rel:childOf <#Fidaid>.
+        rel:childOf <#Fidaid>;
+        rdfs:seeAlso <https://www.wikidata.org/entity/Q1469494>.
 
 <#Fidaid>
         a foaf:Person;
@@ -616,18 +675,18 @@ _:missing-d23e02b6
 
 <#FlandFada>
         a foaf:Person;
-        irishRel:nomName "Fland Fada";
+        irishRel:nomName "Fland Fada" ;
         rel:childOf <#Fidaich-77e322d9>.
 
 <#Fidaich-77e322d9>
         a foaf:Person;
-        irishRel:genName "fidaich".
+        irishRel:genName "Fidaich" ;
+        owl:sameAs <#Fidaich>.
 
 <#CaiCainbrethach>
         a foaf:Person;
         irishRel:nomName "Cai Cainbrethach";
-        rel:childOf <#Feic>;
-        rel:ancestorOf <#FhirDiad>.
+        rel:childOf <#Feic>.
 
 <#Feic>
         a foaf:Person;
@@ -641,12 +700,14 @@ _:missing-d23e02b6
 
 <#DairiDomnandaich>
         a foaf:Person;
-        irishRel:genName "Dairi Domnandaich".
+        irishRel:genName "Dairi Domnandaich";
+        rel:ancestorOf <#FhirDiad>.
 
 <#FhirDiad>
         a foaf:Person;
         irishRel:nomName "Fhir Diad";
-        rel:childOf <#Damain>.
+        rel:childOf <#Damain> ;
+        rdfs:seeAlso <https://www.wikidata.org/entity/Q664939>.
 
 <#Damain>
         a foaf:Person;
@@ -667,12 +728,10 @@ _:missing-d23e02b6
         irishRel:nomName "Fear Deichead" ;
         rel:childOf <#FhirDiad-106a90b3>.
 
-
 <#FhirDiad-106a90b3>
         owl:sameAs <#FhirDiad>;
         irishRel:numChild 3 ;
-        rel:childOf <#Damain-eebb18b7>;
-        rel:ancestorOf <#MeicEcht>.
+        rel:childOf <#Damain-eebb18b7>.
 
 <#Damain-eebb18b7>
         a foaf:Person;
@@ -688,8 +747,11 @@ _:missing-d23e02b6
 <#DairiDomnandaich-bffabe63>
         a foaf:Person;
         irishRel:genName "Dairi Domnandaich";
-        rel:childOf <#Ilair>.
+        rel:childOf <#Ilair>;
+        owl:sameAs <#DairiDomnandaich>.
         #same as <#DairiDomnandaich> above ? - CGY
+        # It looks like it. And that presumably makes Daire Domnandach the
+        # "ancestor of Fer Diad", not Cai Cainbrethach. EPT
 
 <#Ilair>
         a foaf:Person;
@@ -698,12 +760,16 @@ _:missing-d23e02b6
 
 <#Figda>
         a foaf:Person;
-        irishRel:genName "Figda".
+        irishRel:genName "Figda";
+        rel:ancestorOf <#MeicEcht>.
+
+# While the spelling and stem change is disconcerting, this is surely Fidach again? EPT
 
 <#MeicEcht>
         a foaf:Person ;
         irishRel:genName "Meic Echt" ;
-        rel:childOf <#ConRachCais>.
+        rel:childOf <#ConRachCais>;
+        rdfs:seeAlso <https://www.wikidata.org/entity/Q6722244>.
 
 <#MonodumMor>
         a foaf:Person ;
@@ -718,6 +784,7 @@ _:missing-d23e02b6
 <#ConRachCais>
         a foaf:Person;
         irishRel:genName "Con Rach Cais";
+        irishRel:nomName "Cú Roi Cas";
         rel:childOf <#Dairi>;
         irishRel:numChild 2 .
 
@@ -729,7 +796,8 @@ _:missing-d23e02b6
 <#Fidaig>
         a foaf:Person;
         irishRel:genName "Fidaig";
-        rel:childOf <#RainRogloin>.
+        rel:childOf <#RainRogloin>;
+        owl:sameAs <#Fidaich>.
 
 <#RainRogloin>
         a foaf:Person;
