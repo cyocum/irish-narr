@@ -277,12 +277,18 @@
         irishRel:nomName "Fear Corp" ;
         rdf:comment "ri muman"@sga ;
         owl:sameAs <http://example.com/Laud_Misc_610/CGH/clanna_conchubair_maic_nessa.trig#FerCorp>.
-        # same as <http://example.com/Laud_Misc_610/CGH/clanna_conchubair_maic_nessa.trig#FerCorp>
+        # same as <http://example.com/Laud_Misc_610/CGH/clanna_conchubair_maic_nessa.trig#FerCorp>. CGY
         # I think so. He is the only person of that name in the database and the chronology fits. EPT
 
 <#MornaMoir-5a6814f7>
         owl:sameAs <#MornaMoir> ;
         irishRel:numChild 3 .
+        # I am wondering if the text is corrupt at this point (although the NLS Adv. 72.1.1 text agrees
+        # with it). None of the individuals who follow are described as sons of Morna Mór but instead are
+        # described as sons of Nemand, son of Morna Mór. Acallam na Senórach has a character, Dond (who
+        # actually appears below) who gives his pedgigree as "Donn mac Aeda mheic Garaid meic Morna".
+        # So Nemand might be a later insertion the tradition, with the text having not been properly
+        # updated. I assume our policy is, however, to record what the manuscript says. EPT
 
 <#Morna-4f25b77f>
         owl:sameAs <#MornaMoir-5a6814f7>;
@@ -381,9 +387,9 @@ _:missing-d23e02b6
 # Nemaind. -CGY
 # I agree. And that is not the only problem with this bit anyway
 # (the same problems are present in the NLS Adv. 72.1.1 text too, btw).
-# Donn mac Aeda mheic Garaid meic Morna is a character in Acallam na Senórach who
-# ends up taking over the revived Fian. This is presumably <#Dond>. So Nemand is
-# not even universally attested! EPT
+# As we have seen, Nemand is not even universally attested in other sources.
+# For example, in Acallam na Senórach, Dond's pedigree is Donn mac Aeda mheic
+# Garaid meic Morna. EPT
 
 <#Fial>
         a foaf:Person ;
@@ -651,6 +657,11 @@ _:missing-d23e02b6
         # Gamanraid, as are the other characters named here, in other sources. So I think
         # it is meant to be the same Fidach, even though the accounts of his offspring
         # aren't very consistent. EPT
+        # UPDATE: Looking back at the transcription, the exact phrasing is "clanna Fidaich".
+        # "Clann" can mean descendants as well as children and, indeed, in the list that
+        # follows, we find Cai Cainbrethach mac Feic, who is definitely not Fidach's son
+        # but who can be traced back to him. So I don't think we need understand this
+        # as providing a full list of Fidach's children. EPT
 
 <#Fraech>
         a foaf:Person;
@@ -751,7 +762,8 @@ _:missing-d23e02b6
         owl:sameAs <#DairiDomnandaich>.
         #same as <#DairiDomnandaich> above ? - CGY
         # It looks like it. And that presumably makes Daire Domnandach the
-        # "ancestor of Fer Diad", not Cai Cainbrethach. EPT
+        # "ancestor of Fer Diad", not Cai Cainbrethach. See the pedigree for Fer
+        # Diad below - it ends at Daire D and not at Cai C. EPT
 
 <#Ilair>
         a foaf:Person;
@@ -762,8 +774,15 @@ _:missing-d23e02b6
         a foaf:Person;
         irishRel:genName "Figda";
         rel:ancestorOf <#MeicEcht>.
-
-# While the spelling and stem change is disconcerting, this is surely Fidach again? EPT
+        # This is pretty problematic. If we don't identify this with Fidach, then how
+        # else does Fer Diad fit into the scheme? However, the form, "Figda", represents
+        # a big change in not only the spelling but also apparently the stem of this name.
+        # Furthermore, the chronology is becoming pretty inconsistant. Fraech has appeared
+        # above as a son of Fidach, whereas, if <#Figda> is also to be identified with Fidach,
+        # Fer Diad is 5 generations removed from him, yet we know that both Fraech and Fer
+        # Diad were on the Táin.And 5 generations from Fidach also takes us to Áed Alaind, who was
+        # deposed by Cormac mac Airt. Maybe a way forward would be to look at literary references
+        # to both Fer Diad and Mac Cecht and see if any other pedigrees for them exist. EPT
 
 <#MeicEcht>
         a foaf:Person ;
