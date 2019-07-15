@@ -216,6 +216,11 @@
 <#Goll-6636124d>
         owl:sameAs <#Goll>.
 
+<#CnuDeireoil>
+        a foaf:Person ;
+        irishRel:accName "Cnu Deireoil" ;
+        owl:sameAs <http://example.com/Duanaire_Finn/PoemXLV.trig#CnúDeireoil>.
+
 <#ArtOc>
         a foaf:Person ;
         irishRel:nomName "Art Oc" ;
@@ -406,7 +411,7 @@ _:missing-d23e02b6
 # to be gained from trying to tease apart two characters from this. EPT
 
 <#Forco>
-        a foaf:Person ;
+        a irishTitles:Rí ;
         irishRel:genName "Forco" ;
         rel:childOf <#Feradaich>;
         foaf:title "rig con[n]acht"@sga.
@@ -416,10 +421,11 @@ _:missing-d23e02b6
         irishRel:genName "Feradaich" .
 
 <#Art>
-        a foaf:Person;
+        a irishTitles:Rí;
         irishRel:nomName "Art";
         rel:childOf <#Cuind>;
         foaf:title "rig Érenn"@sga;
+        rel:antagonistOf <#Forco>;
         owl:sameAs <http://example.com/LL/rig_ailig.trig#ArtOenfhir>.
 
 <#Cuind>
@@ -428,7 +434,6 @@ _:missing-d23e02b6
         owl:sameAs <http://example.com/LL/rig_ailig.trig#CuindCetchathaig>.
 
 <#Forco-81382fda>
-        a irishTitles:Rí ;
         owl:sameAs <#Forco>.
 
 <#Saimer>
@@ -485,10 +490,7 @@ _:missing-d23e02b6
             rel:siblingOf <#Oisin>;
             owl:sameAs <#Saimer>
             ] .
-
-# Apologies. MS misreading on my part (recte Modh Corp, not Niodh Corp, so the same as Mog Corp),
-# although the scribe did vary the spelling quite gratuitously... EPT
-
+            
 <#Oisin>
         a foaf:Person ;
         irishRel:nomName "Oisin" ;
@@ -526,7 +528,8 @@ _:missing-d23e02b6
 
 <#EchachBaiceda>
         a foaf:Person ;
-        irishRel:genName "Echach Baiceda" .
+        irishRel:genName "Echach Baiceda" ;
+        irishRel:descendantOfGroup <#Gamanraidi>.
 
 <#Gamanraidi>
         a irishRel:PopulationGroup;
@@ -795,10 +798,11 @@ _:missing-d23e02b6
         irishRel:nomName "Monodum Mor" ;
         owl:sameAs <#MeicEcht>.
 
-<#Tindi>
+<#Tindi-d030c92c>
         a foaf:Person ;
         irishRel:nomName "Tindi" ;
         rel:childOf <#ConrachCais> .
+        # Is this <#Tindi> from above? - CGY
 
 <#ConrachCais>
         a foaf:Person;
