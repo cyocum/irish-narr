@@ -26,64 +26,84 @@
   <#Find>
         a foaf:Person ;
         irishRel:genName "Find" ;
-        rel:childOf <#RoighenRuaid>.
+        rel:childOf <#RoighenRuaid>;
+        owl:sameAs <http://example.com/LL/rig_ailig.trig#Find>.
 
   <#RoighenRuaid>
         a foaf:Person ;
         irishRel:genName "Roighen Ruaid" ;
-        rel:descendantOf <#RitfathaScuit>.
+        rel:descendantOf <#RitfathaScuit>;
+        owl:sameAs <http://example.com/LL/rig_ailig.trig#RogenRúaid>.
 
   <#RitfathaScuit>
         a foaf:Person ;
-        irishRel:genName "Ritfatha Scuit" .
+        irishRel:genName "Ritfatha Scuit" ;
+        owl:sameAs <http://example.com/Rawl_B502/dúili_sluinti_na_n_genelach.trig#Rifad>.
 
   <#Cessair>
         a foaf:Person ;
-        irishRel:nomName "Cessair" .
+        foaf:gender "female";
+        irishRel:nomName "Cessair" ;
+        rdfs:comment "ar is do shil Riphaith Scuitt cech gabail rogab Ereind genmotha Cessair namá".
 # sameAs <http://example.com/Rawl_B502/_94.trig#CessairCáemchruthaich> ? - CGY
 # seems unlikely as Cessair Cáemchruthaich is female
+# This Cessair is also female but it is a different person. This is Cessair,
+# daughter of Noah, who fled to Ireland to escape the flood but died before it arrived.
+# She is regarded by some as the first human to set foot in Ireland (see LGÉ).
+# Any road up, we don't have her in IrishGen yet. EPT
 
   <#EochaidFedhlech-eba6d350>
         owl:sameAs <#EochaidFedhlech>;
         irishRel:numChild 3 .
 # MS 23 P 2 says 4 sons - CGY http://www.ucd.ie/tlh/text/jon.eriu.2.001.text.html
+# That is strange. We should stick with Rawl. B.512 on this for now. EPT
 
   <#Bres>
         a foaf:Person ;
         irishRel:nomName "Bres" ;
         rel:childOf <#EochaidFedhlech-eba6d350>;
-        rel:parentOf <#LugaidSriab>;
+        rel:parentOf <#LugaidSriabnDerg>;
         owl:sameAs <http://example.com/Rawl_B502/mínigud_na_cróeb_coibnesta_inso_sís.trigBress> .
 
   <#Nar>
         a foaf:Person ;
         irishRel:nomName "Nar";
-        rel:parentOf <#LugaidSriab>;
+        rel:parentOf <#LugaidSriabnDerg>;
         owl:sameAs <http://example.com/Rawl_B502/mínigud_na_cróeb_coibnesta_inso_sís.trig#Nár>.
 
 
   <#Lothar>
         a foaf:Person ;
         irishRel:nomName <#EochaidFedhlech-eba6d350>;
-        rel:parentOf <#LugaidSriab>;
+        rel:parentOf <#LugaidSriabnDerg>;
         owl:sameAs <http://example.com/Rawl_B502/mínigud_na_cróeb_coibnesta_inso_sís.trig#Lothor>.
-  
+
   _:missing-e682cc36
         a foaf:Person ;
         foaf:gender "female" ;
         rel:siblingOf <#Bres>, <#Nar>, <#Lothar>;
         rel:parentOf <#LugaidSriab>.
-        
-  <#LugaidSriab>
+
+  <#LugaidSriabnDerg>
         a foaf:Person ;
-        irishRel:nomName "Lugaid Sriab" ;
+        irishRel:nomName "Lugaid Sriab nDerg" ;
         owl:sameAs <http://example.com/Rawl_B502/mínigud_na_cróeb_coibnesta_inso_sís.trig#LugaidRiabn-Derg>.
 
   <#ConallAnglonnach>
         a foaf:Person ;
         irishRel:nomName "Conall Anglonnach" ;
-        rel:childOf <#EochachFedlig>.
+        rel:childOf <#EochachFedlig>;
+        irishRel:ancestorOfGroup <#HuiConaill>;
+        owl:saemAs <http://example.com/LL/conaile_murthemni.trig#ConaillAnglondaich>.
         # owl:saemAs <http://example.com/LL/conaile_murthemni.trig#ConaillAnglondaich> ? - CGY
+        # Yup, that fits. He might be ascribed other ancestors elsewhere but he has the same
+        # name and is ancestor of the same people so he seems like the same person, on our terms. EPT
+
+  <#HuiConaill>
+      a irishRel:PopulationGroup;
+      irishRel:populationGroupName "Hui Conaill";
+      rdfs:comment "ra Firu Bregh";
+      owl:sameAs <http://example.com/Rawl_B502/alia_peritia_de_genelogiis_&_de_generibus_hibernensium.trig#Conaille>.
 
   <#EochachFedlig>
         owl:sameAs <#EochaidFedhlech>;
@@ -95,7 +115,8 @@
         foaf:gender "female" ;
         rel:childOf <#EchachFedhligh>;
         rel:spouseOf <#Fergail>, <#Sraibgend>;
-        rel:parentOf <#Mada>.
+        rel:parentOf <#Mada>;
+        rdfs:comment "is uáithi atá Brig Éle la Laigniu".
 
   <#Fergail>
         a foaf:Person ;
@@ -114,7 +135,13 @@
 
   <#Niúil>
         a foaf:Person ;
-        irishRel:genName "Niúil" .
+        irishRel:genName "Niúil" ;
+        irishRel:descendantOfGroup <#Ernaibh>.
+
+  <#Ernaibh>
+        a irishRel:PopulationGroup;
+        irishRel:populationGroupName "Erainn";
+        owl:sameAs <http://example.com/LL/corco_dubni.trig#Eraind>.
 
   <#EchachFedhligh>
         owl:sameAs <#EochachFedlig>;
@@ -124,17 +151,18 @@
         a foaf:Person ;
         irishRel:nomName "Mada" ;
         rel:childOf <#Sraiphgind>;
-        rel:parentOf <#Ailella>.
+        rel:parentOf <#Ailella>;
+        owl:sameAs <http://example.com/LL/lagin.trig#Mata>.
 
   <#Sraiphgind>
         owl:sameAs <#Sraibgend>;
         irishRel:genName "Sraibgend" .
 
-
   <#Ailella>
         a foaf:Person ;
         irishRel:genName "Ailella" ;
-        rel:childOf <#Mada-d6e4d56a>.
+        rel:childOf <#Mada-d6e4d56a>;
+        owl:sameAs <http://example.com/LL/lagin.trig#Ailill>.
 
   <#Mada-d6e4d56a>
         owl:sameAs <#Mada>.
@@ -161,7 +189,7 @@
         a foaf:Person ;
         irishRel:genName "Fachtnae Fathaig" ;
         owl:sameAs <http://example.com/LL/clanna_ébir_i_l-leith_chuind.trig#Factna>.
-        
+
   <#Glaisne>
         a foaf:Person ;
         irishRel:genName "Glaisne" ;
@@ -269,7 +297,7 @@
    <#EochaidDala>
         a foaf:Person ;
         irishRel:nomname "Eochaid Dala" .
-        
+
    <#Fidech>
         a foaf:Person ;
         irishRel:nomName "Fidech" ;
@@ -285,7 +313,7 @@
         irishRel:accName "Conchobur Monodhur" ;
         irishRel:accName "Mac Cecht" ;
         rel:childOf <#Connrach>.
-        
+
    <#Connrach>
         a foaf:Person ;
         irishRel:genName "Connrach" ;
@@ -299,7 +327,7 @@
    <#DailnDruithne>
         a irishRel:PopulationGroup ;
         irishRel:populationGroupName "Dail nDruithne" .
-        
+
    <#FirCraibhe>
         a irishRel:PopulationGroup ;
         irishRel:populationGroupName "Fir Craibhe" .
@@ -356,7 +384,7 @@
         a foaf:Person ;
         irishRel:genName "Etarsceoil" ;
         owl:sameAs <http://example.com/LL/senchas_síl_ébir.trig~EterscélMór> .
-        
+
 
    <#Ailill-5ef56fbd>
         a foaf:Person ;
@@ -368,11 +396,11 @@
         irishRel:accName "Medb" ;
         owl:sameAs <#MedbCruachna>;
         rel:parentOf <#FelimMaineAithreamail>, <#CairpreMaineMaithremail>, <#EochaidMaineAndáoi>, <#FergusMaineTáoi>, <#CetMaineMillscothach>.
-        
+
    <#FelimMaineAithreamail>
         a foaf:Person ;
         irishRel:nomName "Felim Maine Aithreamail" .
-        
+
    <#CairpreMaineMaithremail>
         a foaf:Person ;
         irishRel:nomName "Cairpre Maine Maithremail" .
@@ -388,7 +416,7 @@
    <#CetMaineMillscothach>
         a foaf:Person ;
         irishRel:nomName "Cet Maine Millscothach" .
-        
+
    <#Conchobor-c9a35f99>
         a irishTitles:Rí ;
         owl:sameAs <#Conchubuir>;
@@ -420,12 +448,12 @@
         irishRel:genName "Dungaili" ;
         rel:childOf [
             a irishTitles:Rí ;
-            rdfs:comment "rig Alpan"@sga 
+            rdfs:comment "rig Alpan"@sga
             ] .
-            
+
    <#MaineAndaoi>
         a foaf:Person ;
         irishRel:nomName "Maine Andaoi" ;
         rel:childOf <#Ailella>, <#Medbai>;
-        owl:sameAs <#EochaidMaineAndáoi>.   
+        owl:sameAs <#EochaidMaineAndáoi>.
 }
