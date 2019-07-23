@@ -63,7 +63,7 @@
         irishRel:nomName "Bres" ;
         rel:childOf <#EochaidFedhlech-eba6d350>;
         rel:parentOf <#LugaidSriabnDerg>;
-        owl:sameAs <http://example.com/Rawl_B502/mínigud_na_cróeb_coibnesta_inso_sís.trigBress> .
+        owl:sameAs <http://example.com/Rawl_B502/mínigud_na_cróeb_coibnesta_inso_sís.trig#Bress> .
 
   <#Nar>
         a foaf:Person ;
@@ -94,7 +94,7 @@
         irishRel:nomName "Conall Anglonnach" ;
         rel:childOf <#EochachFedlig>;
         irishRel:ancestorOfGroup <#HuiConaill>;
-        owl:saemAs <http://example.com/LL/conaile_murthemni.trig#ConaillAnglondaich>.
+        owl:sameAs <http://example.com/LL/conaile_murthemni.trig#ConaillAnglondaich>.
         # owl:saemAs <http://example.com/LL/conaile_murthemni.trig#ConaillAnglondaich> ? - CGY
         # Yup, that fits. He might be ascribed other ancestors elsewhere but he has the same
         # name and is ancestor of the same people so he seems like the same person, on our terms. EPT
@@ -383,7 +383,7 @@
    <#Etarsceoil>
         a foaf:Person ;
         irishRel:genName "Etarsceoil" ;
-        owl:sameAs <http://example.com/LL/senchas_síl_ébir.trig~EterscélMór> .
+        owl:sameAs <http://example.com/LL/senchas_síl_ébir.trig#EterscélMór> .
 
 
    <#Ailill-5ef56fbd>
