@@ -308,7 +308,7 @@
 
   <#Domhnandachaibh>
         a irishRel:PopulationGroup;
-        irishRel:populationGroupName "Domhnandachaibh";
+        irishRel:populationGroupName "Domhnandachaibh" .
   # aka the Fir Domnann. EPT
 
   <#EochaidDala>
@@ -495,7 +495,7 @@
   <#FelimMaineAithreamail>
         a foaf:Person ;
         irishRel:nomName "Felim";
-        irishRel:nomName "Maine Aithreamail"
+        irishRel:nomName "Maine Aithreamail" .
 
   <#CairpreMaineMaithremail>
         a foaf:Person ;
