@@ -417,7 +417,7 @@
         irishRel:populationGroupName "Fir Craibhe" .
 
   <#EochaidDala-157b7545>
-        a foaf:Person ;
+        a irishTitles:Rí ;
         irishRel:descendantOfGroup <#FirCraibhe>;
         owl:sameAs <#EochaidDala>.
 
@@ -487,6 +487,7 @@
         rel:parentOf <#FelimMaineAithreamail>, <#CairpreMaineMaithremail>, <#EochaidMaineAndáoi>, <#FergusMaineTáoi>, <#CetMaineMillscothach>.
 
   <#Medb>
+        a irishTitles:Rí ;
         irishRel:accName "Medb" ;
         owl:sameAs <#MedbCruachna>;
         rel:parentOf <#FelimMaineAithreamail>, <#CairpreMaineMaithremail>, <#EochaidMaineAndáoi>, <#FergusMaineTáoi>, <#CetMaineMillscothach>.
