@@ -1,4 +1,4 @@
-@base <http://example.com/LL/gamanraid.trig> .
+@base <http://example.com/Lec/gamanraid.trig> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
@@ -96,7 +96,7 @@
     irishRel:nomName "Fer Da Benn";
     irishRel:genName "Fhir Da Benn";
     rel:childOf <#DoilbRindGlais>;
-    rdfs:comment ".i. bend chuic oigli agus benn boirnne uair ba ri seom eturru sin";
+    rdfs:comment ".i. bend chuic oigli agus benn boirnne uair ba ri seom eturru sin"@sga;
     owl:sameAs <http://example.com/Lec/clann_morna.trig#FirDaBeand>.
 
 <#DoilbRindGlais>
@@ -116,7 +116,7 @@
     irishRel:genName "Fhir Da Thonn";
     irishRel:nomName "Fer Da Thonn";
     rel:childOf <#FhirDumaMoir>;
-    rdfs:comment ".i. tond indsi caerach i corco baiscind agus tonn indsi gluair i tuaid".
+    rdfs:comment ".i. tond indsi caerach i corco baiscind agus tonn indsi gluair i tuaid"@sga.
 
 <#FhirDumaMoir>
     a foaf:Person;
@@ -129,13 +129,13 @@
     irishRel:genName "Fir Da Mag";
     irishRel:nomName "Fer Da Mag";
     rel:childOf <#EnnaUarchosaig>;
-    rdfs:comment ".i. senmag sainb agus senmag agair mic umoir uair ba ri seom eaturru sin".
+    rdfs:comment ".i. senmag sainb agus senmag agair mic umoir uair ba ri seom eaturru sin"@sga.
 
 <#EnnaUarchosaig>
     a foaf:Person;
     irishRel:genName "Enna Uarchosaig";
     irishRel:nomName "Enna Uarchosach";
-    rdfs:comment "air nir gabus tair asa ina cosaib riam";
+    rdfs:comment "air nir gabus tair asa ina cosaib riam"@sga;
     rel:childOf <#Genaind>.
 
 <#Genaind>
