@@ -102,7 +102,7 @@
 <#DoilbRindGlais>
     a foaf:Person;
     irishRel:genName "Doilb Rind Glais";
-    irishrel:nomName "Dolb Rind Glas";
+    irishRel:nomName "Dolb Rind Glas";
     rel:childOf <#FhaelchonFhuilig>.
 
 <#FhaelchonFhuilig>
