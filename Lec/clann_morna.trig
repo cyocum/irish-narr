@@ -1,4 +1,4 @@
-@base <http://example.com/LL/clann_morna.trig> .
+@base <http://example.com/Lec/clann_morna.trig> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
@@ -490,7 +490,7 @@ _:missing-d23e02b6
             rel:siblingOf <#Oisin>;
             owl:sameAs <#Saimer>
             ] .
-            
+
 <#Oisin>
         a foaf:Person ;
         irishRel:nomName "Oisin" ;
@@ -803,6 +803,7 @@ _:missing-d23e02b6
         irishRel:nomName "Tindi" ;
         rel:childOf <#ConrachCais> .
         # Is this <#Tindi> from above? - CGY
+        # I don't know... EPT
 
 <#ConrachCais>
         a foaf:Person;
@@ -819,8 +820,7 @@ _:missing-d23e02b6
 <#Fidaig>
         a foaf:Person;
         irishRel:genName "Fidaig";
-        rel:childOf <#RainRogloin>;
-        owl:sameAs <#Fidaich>.
+        rel:childOf <#RainRogloin>.
 
 <#RainRogloin>
         a foaf:Person;
