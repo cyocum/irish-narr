@@ -298,12 +298,12 @@
         rel:childOf <#ConnrachCaiss>;
         rel:antagonistOf <#Fidech>;
         rdfs:comment "righ Condacht"@sga ;
-        owl:sameAs <http://example.com/LL/clann_morna.trig#Tindi-d030c92c>.
+        owl:sameAs <http://example.com/Lec/clann_morna.trig#Tindi-d030c92c>.
 
   <#ConnrachCaiss>
         a foaf:Person ;
         irishRel:genName "Connrach Caiss" ;
-        owl:sameAs <http://example.com/LL/clann_morna.trig#ConrachCais>;
+        owl:sameAs <http://example.com/Lec/clann_morna.trig#ConrachCais>;
         irishRel:descendantOfGroup <#Domhnandachaibh>.
 
   <#Domhnandachaibh>
@@ -338,7 +338,7 @@
   <#Gamanraid>
         a irishRel:PopulationGroup;
         irishRel:populationGroupName "Gamanraid";
-        owl:sameAs <http://example.com/LL/clann_morna.trig#Gamanraidi>.
+        owl:sameAs <http://example.com/Lec/clann_morna.trig#Gamanraidi>.
 
   <#Sraiphgend>
         a foaf:Person;
