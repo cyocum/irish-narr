@@ -74,7 +74,7 @@
 
   <#Lothar>
         a foaf:Person ;
-        irishRel:nomName <#EochaidFedhlech-eba6d350>;
+        irishRel:nomName "Lothar";
         rel:parentOf <#LugaidSriabnDerg>;
         owl:sameAs <http://example.com/Rawl_B502/mínigud_na_cróeb_coibnesta_inso_sís.trig#Lothor>.
 
