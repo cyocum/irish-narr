@@ -560,4 +560,10 @@
         irishRel:nomName "Maine Andaoi" ;
         rel:childOf <#Ailella>, <#Medbai>;
         owl:sameAs <#EochaidMaineAndáoi>.
+
+  <#Medbai>
+      a foaf:Person ;
+      irishRel:genName "Medbai";
+      owl:sameAs <#MedbCruachna>.
+
 }
