@@ -212,8 +212,7 @@
   <#EchachFedlig-7451e593>
         a foaf:Person ;
         irishRel:genName "Echach Fedlig" ;
-        owl:sameAs <#EchachFedlig>;
-        rel:spouseOf <#Concobur>.
+        owl:sameAs <#EchachFedlig>.
 
   <#Concobur>
         irishRel:accName "Concobur" ;
