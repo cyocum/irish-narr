@@ -1,0 +1,23 @@
+@base <http://example.com/Lec/rigraid_connacht_tar_eis_aillela_agus_meadba.trig> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix rel: <http://purl.org/vocab/relationship/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix irishRel: <http://example.com/earlyirishRelationship.ttl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix irishTitles: <http://example.com/earlyIrishTitles.ttl#> .
+
+<http://example.com/Lec> {
+  <> a dctype:Dataset ;
+        dcterms:title "Rigraid Connacht tar eis Aillela agus Meadba"@sga ;
+        dcterms:isFormatOf <https://www.isos.dias.ie/libraries/RIA/RIA_MS_23_P_2/small_jpgs/353.jpg>, <https://www.isos.dias.ie/libraries/RIA/RIA_MS_23_P_2/small_jpgs/354.jpg>, <https://www.isos.dias.ie/libraries/RIA/RIA_MS_23_P_2/large_jpgs/353.jpg>, <https://www.isos.dias.ie/libraries/RIA/RIA_MS_23_P_2/large_jpgs/354.jpg> ;
+        dcterms:format "application/trig" ;
+        prov:asDerivedFrom <https://www.isos.dias.ie/libraries/RIA/RIA_MS_23_P_2/small_jpgs/353.jpg>, <https://www.isos.dias.ie/libraries/RIA/RIA_MS_23_P_2/large_jpgs/354.jpg>, <https://www.isos.dias.ie/libraries/RIA/RIA_MS_23_P_2/small_jpgs/353.jpg>, <https://www.isos.dias.ie/libraries/RIA/RIA_MS_23_P_2/large_jpgs/354.jpg> .
+
+
+
+
+}
