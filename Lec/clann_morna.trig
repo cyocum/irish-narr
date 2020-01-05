@@ -820,7 +820,8 @@ _:missing-d23e02b6
 <#Fidaig>
         a foaf:Person;
         irishRel:genName "Fidaig";
-        rel:childOf <#RainRogloin>.
+        rel:childOf <#RainRogloin>;
+        owl:sameAs <#Figda>.
 
 <#RainRogloin>
         a foaf:Person;
