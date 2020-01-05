@@ -75,7 +75,7 @@
 <#Ceit>
         a foaf:Person;
         irishRel:genName "Ceit";
-        rel:childOf <#MagaChmurisce>;
+        rel:childOf <#MagachMurisce>;
         owl:sameAs <http://example.com/NLS.Adv.72.1.1/14vb1.trig#Ceit>.
 
 <#MagachMurisce>
@@ -268,7 +268,8 @@
 <#GaraidGlunduib-e7a8b1e4>
         a foaf:Person;
         irishRel:genName "Garaid Glunduib";
-        rel:childOf <#Nemaind-f660de65>.
+        rel:childOf <#Nemaind-f660de65>;
+        owl:sameAs <#GaraidGlunduib>
 
 <#Nemaind-f660de65>
         a foaf:Person;
@@ -313,7 +314,6 @@ _:missing-d23e02b6
 
 <#GaradGlundub>
         a foaf:Person ;
-        owl:sameAs <#GaraidGlunduib>;
         rel:childOf <#Nemaind-1e86f94e>;
         rel:parentOf <#Aeda>.
 
@@ -381,8 +381,7 @@ _:missing-d23e02b6
 
 <#GaraidGlunduib-94c1aeff>
         irishRel:genName "Garaid Glunduib" ;
-        rel:childOf <#Nemaind-895f61e9>;
-        owl:sameAs <#GaradGlundub>.
+        rel:childOf <#Nemaind-895f61e9>.
 
 <#Nemaind-895f61e9>
         a foaf:Person ;
