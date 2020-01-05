@@ -230,7 +230,7 @@
 
 <#Gaedil>
     a irishRel:PopulationGroup;
-    irishRel:populationGroupName "Gaedil";
+    irishRel:populationGroupName "Gaedil".
 
 <#Nemed>
     a foaf:Person;
