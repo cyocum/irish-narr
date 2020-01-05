@@ -97,7 +97,9 @@
         irishRel:accName "Chathbaid" ;
         irishRel:nomName "Cathbad" ;
         rel:parentOf <#Deithtir>, <#Indlenam>, <#Findchaem>;
-        owl:sameAs <http://example.com/Laud_Misc_610/CGH/clanna_conchubair_maic_nessa.trig#Chathbad>, <http://example.com/LL/clanna_ébir_i_l-leith_chuind.trig#Cathbath>.
+        owl:sameAs <http://example.com/Laud_Misc_610/CGH/clanna_conchubair_maic_nessa.trig#Chathbad>;
+        owl:sameAs <http://example.com/LL/clanna_ébir_i_l-leith_chuind.trig#Cathbath>;
+        owl:sameAs <http://example.com/LL/scéla_chonchobuir.trig#Cathbad>.
 
 <#Deithtir>
         a foaf:Person ;
