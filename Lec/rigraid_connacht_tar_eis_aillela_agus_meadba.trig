@@ -17,7 +17,230 @@
         dcterms:format "application/trig" ;
         prov:asDerivedFrom <https://www.isos.dias.ie/libraries/RIA/RIA_MS_23_P_2/small_jpgs/353.jpg>, <https://www.isos.dias.ie/libraries/RIA/RIA_MS_23_P_2/large_jpgs/354.jpg>, <https://www.isos.dias.ie/libraries/RIA/RIA_MS_23_P_2/small_jpgs/353.jpg>, <https://www.isos.dias.ie/libraries/RIA/RIA_MS_23_P_2/large_jpgs/354.jpg> .
 
+<#ConallChruachna>
+    a foaf:Person;
+    irishRel:nomName "Conall Chruachna";
+    rel:childOf <#AengusaFeirt>;
+    owl:sameAs <http://example.com/Lec/clann_morna.trig#ConaillCruachna>.
 
+<#AengusaFeirt>
+    a foaf:Person;
+    irishRel:nomName "Aengus Fert";
+    irishRel:genName "Aengusa Feirt";
+    rel:childOf <#AengusaFind>;
+    owl:sameAs <http://example.com/Lec/clann_morna.trig#AengusaFert>.
 
+<#AengusaFind>
+    a foaf:Person;
+    irishRel:nomName "Aengus Find";
+    irishRel:genName "Aengusa Find";
+    rel:childOf <#Fhidic>;
+    owl:sameAs <http://example.com/Lec/clann_morna.trig#AengusaFind>.
+
+<#Fhidic>
+    a foaf:Person;
+    irishRel:nomName "Feidic";
+    irishRel:genName "Fhidic";
+    rel:childOf <#Feicc>;
+    owl:sameAs <http://example.com/Lec/clann_morna.trig#Fhidaig>.
+
+<#Feicc>
+    a foaf:Person;
+    irishRel:genName "Feicc";
+    irishRel:nomName "Fiacc";
+    rel:childOf <#AedaFind>;
+    owl:sameAs <http://example.com/Lec/clann_morna.trig#Feic>.
+
+<#AedaFind>
+    a foaf:Person;
+    irishRel:genName "Aeda Find";
+    irishRel:nomName "Aed Find";
+    rel:childOf <#DairiDomnanaich>;
+    owl:sameAs <http://example.com/Lec/clann_morna.trig#AedaFind>.
+
+<#DairiDomnanaich>
+    a foaf:Person;
+    irishRel:genName "Dairi Domnanaich";
+    irishRel:nomName "Daire Domanach";
+    rel:childOf <#IlairTheadma>;
+    owl:sameAs <http://example.com/Lec/clann_morna.trig#DairiDomnandaich>.
+
+<#IlairTheadma>
+    a foaf:Person;
+    irishRel:genName "Ilair Theadma";
+    irishRel:nomName "Ilar Teadma";
+    rel:childOf <#Figda>;
+    owl:sameAs <http://example.com/Lec/clann_morna.trig#Ilair>.
+
+<#Figda>
+    a foaf:Person;
+    irishRel:genName "Figda";
+    irishRel:nomName "Fidaig";
+    rel:childOf <#ReinRogloin>;
+    owl:sameAs <http://example.com/Lec/clann_morna.trig#Figda>.
+
+<#ReinRogloin>
+    a foaf:Person;
+    irishRel:genName "Rein Rogloin";
+    rel:childOf <#TuamaTened>;
+    owl:sameAs <http://example.com/Lec/clann_morna.trig#RainRogloin>.
+
+<#TuamaTened>
+    a foaf:Person;
+    irishRel:genName "Tuama Tened";
+    rel:childOf <#FhirDaBenn>;
+    owl:sameAs <http://example.com/Lec/clann_morna.trig#TuamaTened>.
+
+<#FhirDaBenn>
+    a foaf:Person;
+    irishRel:genName "Fhir Da Benn";
+    irishRel:nomName "Fer Da Benn";
+    rdfs:comment ".i. bend chuic oigli agus benn boirnne uair ba ri seom eturru sin";
+    rel:childOf <#DoilbRindGlais>;
+    owl:sameAs <http://example.com/Lec/clann_morna.trig#FirDaBeand>.
+
+<#DoilbRindGlais>
+    a foaf:Person;
+    irishRel:genName "Doilb Rind Glais";
+    rel:childOf <#FhaelchonFhuilig>.
+
+<#FhaelchonFhuilig>
+    a foaf:Person;
+    irishRel:genName "Fhaelchon Fhuilig";
+    irishRel:nomName "Faelchu Fuilech";
+    rel:childOf <#FhirDaThonn>.
+
+<#FhirDaThonn>
+    a foaf:Person;
+    irishRel:genName "Fhir Da Thonn";
+    irishRel:nomName "Fer Da Thonn";
+    rdfs:comment ".i. tond indsi caerach i corco baiscind agus tonn indsi gluair i tuaid";
+    rel:childOf <#FhirDumaMoir>.
+
+<#FhirDumaMoir>
+    a foaf:Person;
+    irishRel:genName "Fhir Duma Moir";
+    irishRel:nomName "Fer Duma Moir";
+    rel:childOf <#FirDaMag>.
+
+<#FirDaMag>
+    a foaf:Person;
+    irishRel:genName "Fir Da Mag";
+    irishRel:nomName "Fer Da Mag";
+    rdfs:comment ".i.senmag sainb agus senmag agair mic umoir uair ba ri seom eaturru sin";
+    rel:childOf <#EnnaUarchosaig>.
+
+<#EnnaUarchosaig>
+    a foaf:Person;
+    irishRel:genName "Enna Uarchosaig";
+    rdfs:comment "air nir gabus tair asa ina cosaib riam";
+    rel:childOf <#Genaind>.
+
+<#Genaind>
+    a foaf:Person;
+    irishRel:genName "Genaind";
+    irishRel:nomName "Genand";
+    rel:childOf <#Deala>.
+
+<#Deala>
+    a foaf:Person;
+    irishRel:genName "Deala";
+    rel:childOf <#Loith>;
+    owl:sameAs <http://example.com/Rawl_B512/ferchuitred_medba.trig#Dela>.
+
+<#Loith>
+    a foaf:Person;
+    irishRel:genName "Loith";
+    irishRel:nomName "Loth";
+    rel:childOf <#Foirtheacht>;
+    owl:sameAs <http://example.com/Rawl_B512/ferchuitred_medba.trig#Loich>.
+
+<#Thribuaith>
+    a foaf:Person;
+    irishRel:genName "Thribuaith";
+    rel:childOf <#Fhorthoirb>.
+
+<#Fhorthoirb>
+    a foaf:Person;
+    irishRel:genName "Fhorthoirb";
+    rel:childOf <#Osmein>.
+
+<#Osmein>
+    a foaf:Person;
+    irishRel:genName "Osmein";
+    rel:childOf <#Foirthech>.
+
+<#Foirthech>
+    a foaf:Person;
+    irishRel:genName "Foirthech";
+    rel:childOf <#Semeoin>.
+
+<#Semeoin>
+    a foaf:Person;
+    irishRel:genName "Semeoin";
+    rel:childOf <#Sdairn>.
+
+<#Sdairn>
+    a foaf:Person;
+    irishRel:genName "Sdairn";
+    rel:childOf <#Nemid>.
+
+<#Nemid>
+    a foaf:Person;
+    irishRel:genName "Nemid";
+    rel:childOf <#Adnomaini>.
+
+<#Adnomaini>
+    a foaf:Person;
+    irishRel:genName "Adnomaini";
+    rel:childOf <#Paim>.
+
+<#Paim>
+    a foaf:Person;
+    irishRel:genName "Paim";
+    rel:childOf <#Thait>.
+
+<#Thait>
+    a foaf:Person;
+    irishRel:genName "Thait";
+    rel:childOf <#Sera>.
+
+<#Sera>
+    a foaf:Person;
+    irishRel:genName "Sera";
+    rel:childOf <#Sru>.
+
+<#Sru>
+    a foaf:Person;
+    irishRel:genName "Sru";
+    rel:childOf <#Easru>;
+    owl:sameAs <http://example.com/LL/section_135.trig#Sru>.
+
+<#Easru>
+    a foaf:Person;
+    irishRel:genName "Easru";
+    rel:childOf <#GaedilGlais>;
+    owl:sameAs <http://example.com/LL/section_135.trig#Esrú>.
+
+<#GaedilGlais>
+    a foaf:Person;
+    irishRel:genName "Gaedil Glais";
+    irishRel:ancestorOfGroup <#Gaedil>;
+    owl:sameAs <http://example.com/LL/section_135.trig#GaidilGlais>.
+
+<#Gaedil>
+    a irishRel:PopulationGroup;
+    irishRel:populationGroupName "Gaedil";
+
+<#Nemed>
+    a foaf:Person;
+    irishRel:nomName "Nemed";
+    rel:descendantOf <#Easru>;
+    owl:sameAs <#Nemid>.
+
+<#Pairthalon>
+    a foaf:Person;
+    irishRel:nomName "Pairthalon";
+    rel:descendantOf <#Easru>.
 
 }
