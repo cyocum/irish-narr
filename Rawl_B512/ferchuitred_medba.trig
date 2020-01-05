@@ -164,7 +164,8 @@
         a foaf:Person ;
         irishRel:genName "Ailella" ;
         rel:childOf <#Mada-d6e4d56a>;
-        owl:sameAs <http://example.com/LL/lagin.trig#Ailill>.
+        owl:sameAs <http://example.com/LL/lagin.trig#Ailill>;
+        owl:sameAs <#Ailella>.
 
   <#Mada-d6e4d56a>
         owl:sameAs <#Mada>.
@@ -351,7 +352,8 @@
 
   <#Níuil>
         a foaf:Person;
-        irishRel:genName "Níuil".
+        irishRel:genName "Níuil";
+        owl:sameAs <#Niúil>.
 
   <#Érnaib>
         a irishRel:PopulationGroup;
@@ -438,7 +440,8 @@
   <#Ailill>
         a foaf:Person ;
         irishRel:nomName "Ailill" ;
-        rel:childOf <#Máda>.
+        rel:childOf <#Máda>;
+        owl:sameAs <#Ailella>.
 
   <#Máda>
         a foaf:Person ;
