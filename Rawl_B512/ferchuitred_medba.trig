@@ -237,7 +237,8 @@
         a foaf:Person ;
         irishRel:nomName "Clothra" ;
         foaf:gender "female" ;
-        rel:childOf <#Eochach>.
+        rel:childOf <#Eochach>;
+        owl:sameAs <http://example.com/LLAdd/LLAdd.trig#Clotra>.
 
   <#Eochach>
         a foaf:Person ;
