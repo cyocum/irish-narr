@@ -272,7 +272,8 @@
         foaf:gender "female" ;
         rel:spouseOf <#Chonchobur-2fcfaf9c>;
         rel:childOf <#EochachFedlig-15b4106c>;
-        owl:sameAs <http://example.com/LL/aisneidem_di_araill.trig#Medba>.
+        owl:sameAs <http://example.com/LL/aisneidem_di_araill.trig#Medba>;
+        owl:sameAs <http://example.com/LLAdd/LLAdd.trig#Medhbh>.
 
   <#EochachFedlig-15b4106c>
         owl:sameAs <#EochachFedlig>.
@@ -421,7 +422,8 @@
   <#EochaidDala-157b7545>
         a irishTitles:Rí ;
         irishRel:descendantOfGroup <#FirCraibhe>;
-        owl:sameAs <#EochaidDala>.
+        owl:sameAs <#EochaidDala>;
+        rel:spouseOf <#MedbCruachna>.
 
   <#Dela>
         a foaf:Person ;
