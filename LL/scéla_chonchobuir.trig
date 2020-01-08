@@ -55,7 +55,8 @@
         rel:spouseOf <#Nessa>.
 
   <#Rossa>
-    a foaf:Person .
+    a foaf:Person ;
+    owl:sameAs <http://example.com/Rawl_B502/_94.trig#Rossa-27452f97>.
 
   <#Conchobor-76ec6f22>
     a foaf:Person ;

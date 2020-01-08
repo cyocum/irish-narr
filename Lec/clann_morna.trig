@@ -269,7 +269,7 @@
         a foaf:Person;
         irishRel:genName "Garaid Glunduib";
         rel:childOf <#Nemaind-f660de65>;
-        owl:sameAs <#GaraidGlunduib>
+        owl:sameAs <#GaraidGlunduib>.
 
 <#Nemaind-f660de65>
         a foaf:Person;
