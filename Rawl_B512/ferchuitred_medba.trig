@@ -273,7 +273,8 @@
         rel:spouseOf <#Chonchobur-2fcfaf9c>;
         rel:childOf <#EochachFedlig-15b4106c>;
         owl:sameAs <http://example.com/LL/aisneidem_di_araill.trig#Medba>;
-        owl:sameAs <http://example.com/LLAdd/LLAdd.trig#Medhbh>.
+        owl:sameAs <http://example.com/LLAdd/LLAdd.trig#Medhbh>;
+        owl:sameAs <http://example.com/LLAdd/LLAdd.trig#Medhbh-a4f5b4a0>.
 
   <#EochachFedlig-15b4106c>
         owl:sameAs <#EochachFedlig>.
