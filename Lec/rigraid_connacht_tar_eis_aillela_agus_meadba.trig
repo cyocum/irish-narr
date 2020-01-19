@@ -175,7 +175,6 @@
     irishRel:nomName "Aengus Find";
     rel:childOf <#Domnaill>;
     rdfs:comment "Et is con nAengus sin ro cet millead in Gamandraid ar tus re deired fhlaitisa Thuathail Techtmair";
-    rel:antagonistOf <#Gamandraid>;
     foaf:knows <#ThuathailTechtmair>;
     owl:sameAs <http://example.com/Lec/gamanraid.trig#AengusaFind>.
 
