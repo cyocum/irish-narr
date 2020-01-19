@@ -17,10 +17,248 @@
         dcterms:format "application/trig" ;
         prov:asDerivedFrom <https://www.isos.dias.ie/libraries/RIA/RIA_MS_23_P_2/small_jpgs/353.jpg>, <https://www.isos.dias.ie/libraries/RIA/RIA_MS_23_P_2/large_jpgs/354.jpg>, <https://www.isos.dias.ie/libraries/RIA/RIA_MS_23_P_2/small_jpgs/353.jpg>, <https://www.isos.dias.ie/libraries/RIA/RIA_MS_23_P_2/large_jpgs/354.jpg> .
 
+<#Aillella>
+    a irishTitles:Rí;
+    irishRel:genName "Aillella";
+    irishRel:nomName "Ailill";
+    irishTitles:succeededBy <#MaineAithremail>;
+    owl:sameAs <http://example.com/Rawl_B512/ferchuitred_medba.trig#Ailella>.
+
+<#Meadba>
+    a irishTitles:Rí;
+    foaf:gender "female";
+    irishRel:genName "Meadba";
+    irishRel:nomName "Medb";
+    irishTitles:succeededBy <#MaineAithremail>;
+    owl:sameAs <http://example.com/Rawl_B512/ferchuitred_medba.trig#MedbCruachna>.
+
+<#MaineAithremail>
+    a irishTitles:Rí;
+    irishRel:nomName "Maine Aithremail";
+    irishTitles:succeededBy <#Shanb>;
+    owl:sameAs <#FelimMaineAithreamail>.
+
+<#Shanb>
+    a irishTitles:Rí;
+    irishTitles:reignLength "26";
+    irishTitles:succeededBy <#Cairpri>;
+    irishRel:datName "Shanb";
+    rel:childOf <#Ceit>;
+    rel:antagonistOf <#TuathalTechtmar>;
+    owl:sameAs <http://example.com/Lec/clann_morna.trig#Sainb>;
+    rdfs:comment "is e in Sanb sin fear deiginach ca roibi Meadb Chruachan".
+
+<#Ceit>
+    a foaf:Person;
+    irishRel:genName "Ceit";
+    irishRel:nomName "Cet";
+    rel:childOf <#Magach>;
+    owl:sameAs <http://example.com/Lec/clann_morna.trig#Ceit>.
+
+<#Magach>
+    a foaf:Person;
+    irishRel:genName "Magach";
+    owl:sameAs <http://example.com/Lec/clann_morna.trig#MagachMurisce>.
+
+<#TuathalTechtmar>
+    a foaf:Person;
+    irishRel:nomName "Tuathal Techtmar";
+    owl:sameAs <http://example.com/LL/rig_ailig.trig#TuathailTectmair>.
+
+<#Cairpri>
+    a irishTitles:Rí;
+    irishTitles:succeededBy <#Eochaid>;
+    irishRel:nomName "Cairpre";
+    rel:childOf <#MaineAithremail-ca79be70>.
+
+<#MaineAithremail-ca79be70>
+    a foaf:Person;
+    irishRel:genName "Maine Aithremail";
+    owl:sameAs <#MaineAithremail>;
+    rel:childOf <#Matai>.
+
+<#Matai>
+    a foaf:Person;
+    irishRel:genName "Matai";
+    rel:childOf <#Sraibgind>;
+    owl:sameAs <http://example.com/Rawl_B512/ferchuitred_medba.trig#Mada>.
+
+<#Sraibgind>
+    a foaf:Person;
+    irishRel:genName "Sraibgind";
+    rel:childOf <#Niuil>;
+    owl:sameAs <http://example.com/Rawl_B512/ferchuitred_medba.trig#Sraibgend>.
+
+<#Niuil>
+    a foaf:Person;
+    irishRel:genName "Niuil";
+    rel:childOf <#Fidaig>;
+    owl:sameAs <http://example.com/Rawl_B512/ferchuitred_medba.trig#Niúil>.
+
+<#Fidaig>
+    a foaf:Person;
+    irishRel:genName "Fidaig";
+    rel:childOf <#FuichiDegad>.
+
+<#FuichiDegad>
+    a foaf:Person;
+    irishRel:genName "Fuichi Degad";
+    rel:childOf <#Sin>;
+    owl:sameAs <http://example.com/Rawl_B502/genelach_ríg_n_alban.trig#Dedad>
+
+<#Sin>
+    a foaf:Person;
+    irishRel:genName "Sin";
+    rel:childOf <#Rosin>;
+    owl:sameAs <http://example.com/Rawl_B502/genelach_ríg_n_alban.trig#Sin>.
+
+<#Rosin>
+    a foaf:Person;
+    irishRel:genName "Rosin";
+    owl:sameAs <http://example.com/Rawl_B502/genelach_ríg_n_alban.trig#Roshin>.
+
+<#tainb>
+    a foaf:Person;
+    irishRel:genName "tainb"
+    irishRel:nomName "Sanb";
+    rel:childOf <#Ceit-a6cc3520>;
+    owl:sameAs <#Shanb>.
+
+<#Ceit-a6cc3520>
+    a foaf:Person;
+    irishRel:genName "Ceit";
+    rel:childOf <#MagachMuirisce>;
+    owl:sameAs <#Ceit>.
+
+<#MagachMuirisce>
+    a foaf:Person;
+    irishRel:genName "Magach Muirisce";
+    owl:sameAs <#Magach>.
+
+<#Eochaind>
+    a foaf:Person;
+    irishRel:nomName "Eochaind";
+    rel:childOf <#EchachFind>;
+    rel:antagonistOf <#Cairpri>.
+
+<#EchachFind>
+    a foaf:Person;
+    irishRel:genName "Echach Find";
+    irishRel:nomName "Eochu Find";
+    irishRel:descendantOfGroup <#Domnandchaib>.
+
+<#Domnandchaib>
+    a irishRel:PopulationGroup;
+    irishRel:populationGroupName "Domnandchaib".
+
+<#Eochaid>
+    a irishTitles:Rí;
+    irishTitles:succeededBy <#AengusFind>;
+    irishRel:nomName "Eochaid";
+    rel:childOf <#Cairpri-66c8f600>.
+
+<#Cairpri-66c8f600>
+    a foaf:Person;
+    irishRel:genName "Cairpri";
+    irishRel:nomName "Cairpre";
+    rel:childOf <#MaineAithremail-fbb84a80>;
+    owl:sameAs <#Cairpri>.
+
+<#MaineAithremail-fbb84a80>
+    a foaf:Person;
+    irishRel:genName "Maine Aithremail";
+    owl:sameAs <#MaineAithremail>.
+
+<#AengusFind>
+    a irishTitles:Rí;
+    irishTitles:succeededBy <#AengusFeirt>;
+    irishRel:nomName "Aengus Find";
+    rel:childOf <#Domnaill>;
+    rdfs:comment "Et is con nAengus sin ro cet millead in Gamandraid ar tus re deired fhlaitisa Thuathail Techtmair";
+    rel:antagonistOf <#Gamandraid>;
+    foaf:knows <#ThuathailTechtmair>;
+    owl:sameAs <http://example.com/Lec/gamanraid.trig#AengusaFind>.
+
+<#Gamandraid>
+    a irishRel:PopulationGroup;
+    irishRel:populationGroupName "Gamandraid".
+
+<#ThuathailTechtmair>
+    a foaf:Person;
+    irishRel:genName "Thuathail Techtmair";
+    owl:sameAs <#TuathalTechtmar>.
+
+<#Domnaill>
+    a foaf:Person;
+    irishRel:genName "Domnaill";
+    irishRel:nomName "Domnall";
+    rel:childOf <#Feic>.
+
+<#Feic>
+    a foaf:Person;
+    irishRel:genName "Feic";
+    irishRel:nomName "Fiac";
+    rel:childOf <#Fidaich>.
+
+<#Fidaich>
+    a foaf:Person;
+    irishRel:genName "Fidaich".
+
+<#AengusFeirt>
+    a irishTitles:Rí;
+    irishTitles:succeededBy <#ConallCruachna>;
+    irishRel:nomName "Aengus Feirt";
+    rel:childOf <#AengusFind>;
+    owl:sameAs <http://example.com/Lec/gamanraid.trig#AengusaFeirt>.
+
+<#ConallCruachna>
+    a irishTitles:Rí;
+    irishRel:nomName "Conall Cruachna";
+    rel:childOf <#AengusFeirt>;
+    rdfs:comment "agus is e ba comaimser do Feidlimid Rechtmar";
+    foaf:knows <#FeidlimidRechtmar>.
+
+<#FeidlimidRechtmar>
+    a foaf:Person;
+    irishRel:nomName "Feidlimid Rechtmar";
+    owl:sameAs <http://example.com/LL/comuammand_na_n-genelach.trig#FeidlimidRechtaid>.
+
+<#ForcusFiansa>
+    a foaf:Person;
+    irishRel:nomName "Forcus Fiansa";
+    rel:childOf <#Feradach>.
+
+<#Cathair>
+    a foaf:Person;
+    irishRel:nomName "Cathair".
+
+<#Feradach>
+    a foaf:Person;
+    irishRel:nomName "Feradach";
+    rel:childOf <#AengusFeirt>;
+    foaf:knows <#Chuind>, <#Conairi>.
+
+<#Chuind>
+    a foaf:Person;
+    irishRel:nomName "Conn";
+    owl:sameAs <http://example.com/LL/rig_ailig.trig#CuindCetchathaig>.
+
+<#Conairi>
+    a foaf:Person;
+    irishRel:genName "Conairi";
+    rel:childOf <#MogaLama>;
+    owl:sameAs <http://example.com/LL/rig_alban.trig#Conaire>.
+
+<#MogaLama>
+    a foaf:Person;
+    irishRel:genName "Moga Lama";
+    owl:sameAs <http://example.com/LL/rig_alban.trig#MogaLama>.
+
 <#ConallChruachna>
     a foaf:Person;
     irishRel:nomName "Conall Chruachna";
     rel:childOf <#AengusaFeirt>;
+    owl:sameAs <#ConallCruachna>;
     owl:sameAs <http://example.com/Lec/clann_morna.trig#ConaillCruachna>.
 
 <#AengusaFeirt>
@@ -28,6 +266,7 @@
     irishRel:nomName "Aengus Fert";
     irishRel:genName "Aengusa Feirt";
     rel:childOf <#AengusaFind>;
+    owl:sameAs <#AengusFeirt>;
     owl:sameAs <http://example.com/Lec/clann_morna.trig#AengusaFert>.
 
 <#AengusaFind>
@@ -35,6 +274,7 @@
     irishRel:nomName "Aengus Find";
     irishRel:genName "Aengusa Find";
     rel:childOf <#Fhidic>;
+    owl:sameAs <#AengusFind>;
     owl:sameAs <http://example.com/Lec/clann_morna.trig#AengusaFind>.
 
 <#Fhidic>
