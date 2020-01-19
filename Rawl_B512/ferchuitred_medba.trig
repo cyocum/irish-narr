@@ -164,8 +164,7 @@
         a foaf:Person ;
         irishRel:genName "Ailella" ;
         rel:childOf <#Mada-d6e4d56a>;
-        owl:sameAs <http://example.com/LL/lagin.trig#Ailill>;
-        owl:sameAs <#Ailella>.
+        owl:sameAs <http://example.com/LL/lagin.trig#Ailill>.
 
   <#Mada-d6e4d56a>
         owl:sameAs <#Mada>.
