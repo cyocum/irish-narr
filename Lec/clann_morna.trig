@@ -176,8 +176,7 @@
 <#CairpriCeindderg>
         a foaf:Person ;
         irishRel:genName "Cairpri Ceindderg" ;
-        rel:childOf <#FhirDaLoch>;
-        owl:sameAs <http://example.com/LLAdd/LLAdd.trig#CoirpreCeinnderg>.
+        rel:childOf <#FhirDaLoch>.
 
 <#FhirDaLoch>
         a foaf:Person ;
