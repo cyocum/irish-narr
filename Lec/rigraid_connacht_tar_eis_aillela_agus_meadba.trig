@@ -104,7 +104,7 @@
     a foaf:Person;
     irishRel:genName "Fuichi Degad";
     rel:childOf <#Sin>;
-    owl:sameAs <http://example.com/Rawl_B502/genelach_ríg_n_alban.trig#Dedad>
+    owl:sameAs <http://example.com/Rawl_B502/genelach_ríg_n_alban.trig#Dedad>.
 
 <#Sin>
     a foaf:Person;
@@ -119,7 +119,7 @@
 
 <#tainb>
     a foaf:Person;
-    irishRel:genName "tainb"
+    irishRel:genName "tainb";
     irishRel:nomName "Sanb";
     rel:childOf <#Ceit-a6cc3520>;
     owl:sameAs <#Shanb>.
