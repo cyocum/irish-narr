@@ -96,7 +96,8 @@
   <#Rossa-65ba7833>
         a foaf:Person ;
         irishRel:genName "Rossa" ;
-        owl:sameAs <http://example.com/Laud_Misc_610/CGH/senchus_síl_hír.trig#Rossa>.
+        owl:sameAs <http://example.com/Laud_Misc_610/CGH/senchus_síl_hír.trig#Rossa>;
+        owl:sameAs <http://example.com/LL/fergus_mc_do_roig.trig#Rosa-054832e8>.
 
 <#Fergus-b94072b1>
         a foaf:Person ;
