@@ -40,7 +40,7 @@
 
 <#Shanb>
     a irishTitles:Rí;
-    irishTitles:reignLength "26";
+    irishTitles:reignLength 26;
     irishTitles:succeededBy <#Cairpri>;
     irishRel:datName "Shanb";
     rel:childOf <#Ceit>;
