@@ -1,11 +1,6 @@
 from openjdk:11
-RUN wget https://www-eu.apache.org/dist/jena/binaries/apache-jena-3.13.1.tar.gz 
-RUN tar xfvz apache-jena-3.13.1.tar.gz
-RUN sed -i 's/WARN/INFO/g' ./apache-jena-3.13.1/jena-log4j.properties
-RUN mkdir -p /workspace/LL /workspace/Lec /workspace/Rawl_B512
-COPY build.sh /workspace/
-COPY LL /workspace/LL
-COPY Rawl_B512 /workspace/Rawl_B512
-COPY Lec /workspace/Lec
-RUN chmod 777 /workspace/build.sh
-ENTRYPOINT ["/workspace/build.sh"]
+COPY apache-jena-3.15.0.tar.gz .
+RUN tar xfvz apache-jena-3.15.0.tar.gz
+ENV JENA_HOME /apache-jena-3.15.0
+ENV IRISH_GEN_HOME /workspace
+ENTRYPOINT ["/workspace/utils/check_file_syntax.sh"]
