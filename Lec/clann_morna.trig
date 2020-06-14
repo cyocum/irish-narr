@@ -178,8 +178,7 @@
 <#CairpriCeindderg>
         a foaf:Person ;
         irishRel:genName "Cairpri Ceindderg" ;
-        rel:childOf <#FhirDaLoch>;
-        owl:sameAs <http://example.com/LLAdd/LLAdd.trig#CoirpreCeinnderg>.
+        rel:childOf <#FhirDaLoch>.
 
 <#FhirDaLoch>
         a foaf:Person ;
@@ -449,7 +448,8 @@ _:missing-d23e02b6
 <#AillellaUloim>
         a foaf:Person ;
         irishRel:genName "Aillella Uloim" ;
-        owl:sameAs <http://example.com/LL/rig_tuadmuman.trig#AilellaUluimm>.
+        owl:sameAs <http://example.com/LL/rig_tuadmuman.trig#AilellaUluimm>;
+        owl:sameAs <http://example.com/LL/clanna_ébir_i_l-leith_chuind.trig#AilillAulomm>.
 
 <#Fhind>
         a foaf:Person ;
